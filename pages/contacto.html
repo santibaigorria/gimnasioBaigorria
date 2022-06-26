@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" href="../assets/img/favicon.jpeg">
+    <title>Contacto</title>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <div class="navegacion">
+        <h1 class="navegacion__titulo">PAMPA Gym</h1>
+    </div>
+    <nav class="navegacion__barra">
+
+        <ul class="navegacion__lista">
+            <li class="navegacion__boton"><a href="../index.html">Home</a></li>
+            <li class="navegacion__boton"><a href="./actividades.html">Actividades</a></li>
+            <li class="navegacion__boton"><a href="./productos.html">Productos</a></li>
+            <li class="navegacion__boton"><a href="./about-us.html">About us</a></li>
+            <li class="navegacion__boton"><a href="./contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Main -->
+<main>
+    <section class="contacto__seccion">
+        <h2 class="contacto__titulo">Te dejamos un espacio para que llenes con tus datos</h2>
+        <form action="" class="formulario">
+        <h3 class="contacto__titulo--2">Completa aqui:</h3>
+            <div class="campo">
+                <label for="campo-name" class="campo__titulo">Nombre y apellido</label>
+                <input type="text" id="campo-name" placeholder="Nombre y Apellido" required class="campo__input">
+            </div>
+
+            <div class="campo">
+                <label for="campo-tel" class="campo__titulo">Teléfono</label>
+                <input type="tel" id="campo-tel" placeholder="+11 222333-4444" required class="campo__input">
+            </div>
+
+            <div class="campo">
+                <label for="genero" class="campo__titulo"> Decinos tu genero para poder dirigirnos mejor hacia vos: </label>
+                <select name="Genero" id="genero" required class="campo__select">
+                    <option value="H" class="campo__select--opcion">Hombre</option>
+                    <option value="M" class="campo__select--opcion">Mujer</option>
+                    <option value="ND" class="campo__select--opcion">No definido</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="campo-email" class="campo__titulo">Correo Electronico</label>
+                <input type="email" id="campo-email" placeholder="ejemplo@correo.com" required class="campo__input">
+            </div>
+
+            <div class="campo">
+                <label for="noticias-mail" class="campo__titulo">¿Deseas recibir nuestras noticias en tu casilla de correo?</label>
+                <input type="checkbox" id="noticias-mail" required class="campo__input">
+            </div>
+
+            <div class="campo">
+                <p class="campo__titulo">¿Tenes algo que decirnos?</p>
+                <textarea name="comentarios" id="" cols="30" rows="10" placeholder="Dejanos tu comentario!" required class="campo__texto"></textarea>
+            </div>
+
+            <div class="campo">
+                <input type="submit" value="Enviar Formulario" class="campo__enviar"/>
+                <input type="reset" value="Borrar informacion" class="campo__resetear"/>
+            </div>
+        </form>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer>
+    <img src="../assets/img/logo-gym-sinfondo.png" alt="Logo Gym" class="contacto__foto">
+    <div class="contacto">
+        <a href="" class="contacto__red--ig"></a>
+        <a href="" class="contacto__red--face"></a>
+        <a href="" class="contacto__red--wsp"></a>
+        <a href="" class="contacto__red--mail"></a>
+    </div>
+    <span class="contacto__copy">&copy;2022, PAMPA Gym, Derechos reservados.</span>
+</footer>
+</body>
+</html>
