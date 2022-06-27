@@ -48,7 +48,8 @@ header{
     align-items: center;
 }
 
-.navegacion__titulo{
+.navegacion__titulo a{
+    text-decoration: none;
     color: white;
 }
 
