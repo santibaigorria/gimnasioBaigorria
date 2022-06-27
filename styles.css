@@ -70,17 +70,20 @@ header{
 /* -------------------------------------- Main Index ------------------------------------- */
     /* Seccion inicio */
 .seccionInicio{
-    padding: 10vw;
-    background-image: url(./assets/img/inicio.jpeg);
+    padding: 5vw;
+    background-image: url(./assets/img/inicio.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .seccionInicio__contenedor{
     background-color: rgba(0, 0, 0, 0.704);
+    
+    display: flex;
+    flex-direction: column;
 }
 
-.seccionInicio__logo, .seccionInicio__titulo, .seccionInicio__boton{
+.seccionInicio__logo, .seccionInicio__titulo{
     color: white;
     display: flex;
     justify-content: center;
@@ -94,23 +97,46 @@ header{
 
 .seccionInicio__logo{
     padding: 10px;
-    height: 30vw;
+    height: 25vw;
 }
 
 .seccionInicio__titulo{
     font-style: italic;
-    font-style: oblique;
     font-size: 3rem;
 }
 
-    /* Seccion Gimnasio */
+.seccionInicio__boton{
+    text-decoration: none;
+
+    font-size: 24px;
+    font-weight: 700;
+
+    padding: 4px 12px;
+
+    background-color: #6c757d;
+    color: white;
+
+    border-radius: 4px;
+    border-color:#6c757d;
+}
+
+.seccionInicio__contenedor--boton{
+    padding-top: 6px;
+    padding-bottom: 9px;
+    
+    display: flex;
+    justify-content: center;
+}
+
+    /* ----------Seccion Gimnasio----------- */
 .seccionGym{
     background-color: #E7ECEF;
  
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
-} 
+}
+
         /* MEDIA QUERIES SECCION GYM */
     @media screen and (min-width: 320px){
         .seccionGym{
@@ -143,31 +169,40 @@ header{
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             grid-template-rows: repeat(2, 1fr);
+
+            overflow-x: hidden;
         }
     }
 
 .seccionGym__titulo{
     background-color: #6c757d;
     color: white;
+
     padding-top: 5px;
     padding-bottom: 7px;
+
     text-align: center;
 
     grid-column: 1/5;
 }
 
-        /* Futuro carrusel de fotos */
+.seccionGym__contenedor{
+    /* background-color: rgb(209, 209, 209); */
+
+    padding-top: 6%;
+    padding-bottom: 6%;
+}
+
+    /* Futuro carrusel de fotos */
 .seccionGym__foto{
     width: 90%;
     padding: 10px;
-
-    border-radius: 20px;
 
     display: flex;
     justify-self: center;
 }
 
-    /* Seccion Nosotros */
+    /* -----------Seccion Nosotros----------- */
 .seccionNosotros{
     background-color: #E7ECEF;
 
