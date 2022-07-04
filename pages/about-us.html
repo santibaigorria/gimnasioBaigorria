@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../styles.css">
     <link rel="icon" href="../assets/img/favicon.jpeg">
     <title>About us</title>
@@ -11,20 +12,36 @@
 <body>
 
 <!-- Header -->
-<header>
-    <div class="navegacion">
-        <h1 class="navegacion__titulo">PAMPA Gym</h1>
-    </div>
-    <nav class="navegacion__barra">
+<header class="header">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a href="../index.html"><img src="/assets/img/logo-gym-sinfondo.png" alt="" class="navegacion__foto"></a>
+            <a class="navbar-brand text-white" href="../index.html">PAMPA Gym</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <ul class="navegacion__lista">
-            <li class="navegacion__boton"><a href="../index.html">Home</a></li>
-            <li class="navegacion__boton"><a href="./actividades.html">Actividades</a></li>
-            <li class="navegacion__boton"><a href="./productos.html">Productos</a></li>
-            <li class="navegacion__boton"><a href="./about-us.html">About us</a></li>
-            <li class="navegacion__boton"><a href="./contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../pages/actividades.html">Actividades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../pages/productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../pages/about-us.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../pages/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+          </div>
+        </div>
+      </nav>
 </header>
 
 <!-- Main -->
@@ -32,30 +49,35 @@
     <section class="aboutUs__seccion">
         <h2 class="aboutUs__titulo">¿Quienes forman nuestro equipo?</h2>
 
-        <div class="aboutUs__profesor--gym">
+        <div class="aboutUs__profesor--gym1">
             <h3 class="aboutUs__nombre">Juan Baigorria</h3>
-            <img src="../assets/img/profesor-1.jpg" alt="Profesor Juan" class="aboutUs__foto">
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, at?</p>
         </div>
+        <div class="aboutUs__contenedor--img1"><img src="../assets/img/profesor-1.jpg" alt="Profesor Juan" class="aboutUs__foto"></div>
 
-        <div class="aboutUs__profesor--artesm">
-            <h3 class="aboutUs__nombre">Roberto Guzman</h3>
-            <img src="../assets/img/profesor-2.jpg" alt="Profesor Roberto" class="aboutUs__foto">
+        <div class="aboutUs__profesor--gym2">
+            <h3 class="aboutUs__nombre">Roberto</h3>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, voluptatum quisquam magnam quo quia architecto commodi laudantium? Libero omnis repellat explicabo tempore vero sit. Nemo, laboriosam magnam. Cum, ullam minima!</p>
         </div>
+        <div class="aboutUs__contenedor--img2"><img src="../assets/img/profesor-2.jpg" alt="Profesor Roberto" class="aboutUs__foto"></div>
 
-        <div class="aboutUs__profesor--gym">
-            <h3 class="aboutUs__nombre">Leandro Guzman</h3>
-            <img src="../assets/img/profesor-3.jpg" alt="Profesor Leandro" class="aboutUs__foto">
+        <div class="aboutUs__profesor--gym3">
+            <h3 class="aboutUs__nombre">Vanina Rossi</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In reiciendis fugit vel, fuga id corrupti velit.</p>
         </div>
+        <div class="aboutUs__contenedor--img3"><img src="../assets/img/profesor-3.png" alt="Profe Yanina" class="aboutUs__foto"></div>
 
-        <div class="aboutUs__profesor--artesm">
-            <h3 class="aboutUs__nombre">Thiago 'Chino' Rossi</h3>
-            <img src="../assets/img/profesor 4.jpg" alt="Profesor Thiago" class="aboutUs__foto">
+        <div class="aboutUs__profesor--gym4">
+            <h3 class="aboutUs__nombre">Leandro Guzman</h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, velit ipsum? Pariatur soluta temporibus veniam magnam ducimus itaque ab nihil.</p>
         </div>
+        <div class="aboutUs__contenedor--img4"><img src="../assets/img/profesor 4.jpg" alt="Profesor Leandro" class="aboutUs__foto"></div>
 
+
+        <div class="aboutUs__equipo">
+            <h4 class="aboutUs__equipo--titulo">Somos un equipo...</h3>
+            <p class="aboutUs__equipo--parrafo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum fugiat minus at ipsa, quae provident itaque quibusdam id velit in suscipit fugit voluptates laboriosam dolores consectetur officiis accusamus officia eligendi?</p>
+        </div>
     </section>
 </main>
 
@@ -70,5 +92,6 @@
     </div>
     <span class="contacto__copy">&copy;2022, PAMPA Gym, Derechos reservados.</span>
 </footer>
+    <script src="/js/bootstrap.js"></script>
 </body>
 </html>

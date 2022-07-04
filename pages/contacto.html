@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="../styles.css">
     <link rel="icon" href="../assets/img/favicon.jpeg">
     <title>Contacto</title>
@@ -11,66 +12,95 @@
 <body>
 
 <!-- Header -->
-<header>
-    <div class="navegacion">
-        <h1 class="navegacion__titulo">PAMPA Gym</h1>
-    </div>
-    <nav class="navegacion__barra">
+<header class="header">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a href="../index.html"><img src="/assets/img/logo-gym-sinfondo.png" alt="" class="navegacion__foto"></a>
+            <a class="navbar-brand text-white" href="../index.html">PAMPA Gym</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <ul class="navegacion__lista">
-            <li class="navegacion__boton"><a href="../index.html">Home</a></li>
-            <li class="navegacion__boton"><a href="./actividades.html">Actividades</a></li>
-            <li class="navegacion__boton"><a href="./productos.html">Productos</a></li>
-            <li class="navegacion__boton"><a href="./about-us.html">About us</a></li>
-            <li class="navegacion__boton"><a href="./contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../pages/actividades.html">Actividades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../pages/productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../pages/about-us.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../pages/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+          </div>
+        </div>
+      </nav>
 </header>
 
 <!-- Main -->
 <main>
     <section class="contacto__seccion">
-        <h2 class="contacto__titulo">Te dejamos un espacio para que llenes con tus datos</h2>
+        <h2 class="contacto__titulo"></h2>
         <form action="" class="formulario">
-        <h3 class="contacto__titulo--2">Completa aqui:</h3>
-            <div class="campo">
-                <label for="campo-name" class="campo__titulo">Nombre y apellido</label>
-                <input type="text" id="campo-name" placeholder="Nombre y Apellido" required class="campo__input">
-            </div>
+            <fieldset>
+                <legend class="h2 d-flex justify-content-center">Contactanos!</legend>
+                <div class="row">
+                    <div class="col">
+                        <label for="inputText">Nombre</label>
+                      <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" required>
+                    </div>
+                    <div class="col">
+                        <label for="inputText">Apellido</label>
+                      <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido" required>
+                    </div>
+                </div>
 
-            <div class="campo">
-                <label for="campo-tel" class="campo__titulo">Teléfono</label>
-                <input type="tel" id="campo-tel" placeholder="+11 222333-4444" required class="campo__input">
-            </div>
+                <div>
+                    <label for="inputMail">Correo Electronico</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="ejemplo@correo.com" required>
+                </div>
 
-            <div class="campo">
-                <label for="genero" class="campo__titulo"> Decinos tu genero para poder dirigirnos mejor hacia vos: </label>
-                <select name="Genero" id="genero" required class="campo__select">
-                    <option value="H" class="campo__select--opcion">Hombre</option>
-                    <option value="M" class="campo__select--opcion">Mujer</option>
-                    <option value="ND" class="campo__select--opcion">No definido</option>
-                </select>
-            </div>
+                <div class="col">
+                    <label for="">Telefono</label>
+                    <input type="tel" class="form-control" placeholder="+11 222333-4444" aria-label="Nombre" required>
+                  </div>
 
-            <div class="campo">
-                <label for="campo-email" class="campo__titulo">Correo Electronico</label>
-                <input type="email" id="campo-email" placeholder="ejemplo@correo.com" required class="campo__input">
-            </div>
+                <div>
+                    <label for="">Género</label>
+                    <select class="form-select" aria-label="Default select example" required>
+                        <option selected>Se identifica como...</option>
+                        <option value="1">Hombre</option>
+                        <option value="2">Mujer</option>
+                        <option value="3">Indefinido</option>
+                      </select>
+                </div>
 
-            <div class="campo">
-                <label for="noticias-mail" class="campo__titulo">¿Deseas recibir nuestras noticias en tu casilla de correo?</label>
-                <input type="checkbox" id="noticias-mail" required class="campo__input">
-            </div>
+                <div>
+                    <label for="">Dejanos tu comentario</label>
+                </div>
 
-            <div class="campo">
-                <p class="campo__titulo">¿Tenes algo que decirnos?</p>
-                <textarea name="comentarios" id="" cols="30" rows="10" placeholder="Dejanos tu comentario!" required class="campo__texto"></textarea>
-            </div>
-
-            <div class="campo">
-                <input type="submit" value="Enviar Formulario" class="campo__enviar"/>
-                <input type="reset" value="Borrar informacion" class="campo__resetear"/>
-            </div>
+                <div class="form-floating">
+                    <textarea class="form-control" id="floatingTextarea" style="height: 200px" required></textarea>
+                    <label for="floatingTextarea">Ejemplo...</label>
+                  </div>
+                <div class="mb-3">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="FieldsetCheck" >
+                    <label class="form-check-label" for="FieldsetCheck">
+                      ¿Deseas recibir el Newsletter?
+                    </label>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-light">Enviar</button>
+                <input type="reset" value="Borrar informacion" class="btn btn-light campo__resetear"/>
+              </fieldset>
         </form>
     </section>
 </main>
@@ -86,5 +116,6 @@
     </div>
     <span class="contacto__copy">&copy;2022, PAMPA Gym, Derechos reservados.</span>
 </footer>
+    <script src="/js/bootstrap.js"></script>
 </body>
 </html>

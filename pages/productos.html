@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="../styles.css">
     <link rel="icon" href="../assets/img/favicon.jpeg">
     <title>Productos</title>
@@ -11,57 +12,90 @@
 <body>
 
 <!-- Header -->
-<header>
-    <div class="navegacion">
-        <h1 class="navegacion__titulo">PAMPA Gym</h1>
-    </div>
-    <nav class="navegacion__barra">
+<header class="header">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a href="../index.html"><img src="/assets/img/logo-gym-sinfondo.png" alt="" class="navegacion__foto"></a>
+            <a class="navbar-brand text-white" href="../index.html">PAMPA Gym</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <ul class="navegacion__lista">
-            <li class="navegacion__boton"><a href="../index.html">Home</a></li>
-            <li class="navegacion__boton"><a href="./actividades.html">Actividades</a></li>
-            <li class="navegacion__boton"><a href="./productos.html">Productos</a></li>
-            <li class="navegacion__boton"><a href="./about-us.html">About us</a></li>
-            <li class="navegacion__boton"><a href="./contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../pages/actividades.html">Actividades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../pages/productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../pages/about-us.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../pages/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+          </div>
+        </div>
+      </nav>
 </header>
 
 <!-- Main -->
 <main>
     <section class="productos__seccion">
-        <h2 class="producto__titulo">Productos que ofrecemos:</h2>
-        <h5 class="producto__titulo--2">(Solo compra en mostrador)</h5>
-        <div class="productos__contenedor">
-        <div class="producto">
-            <h3 class="producto__nombre">Tarro de Proteina</h3>
-            <img src="../assets/productos/proteina.PNG" alt="Tarro de Proteina" class="producto__foto">
-            <div class="producto__boton"><button class="producto__ver">Ver producto</button></div>
+        <h2 class="producto__titulo">Nuestros productos</h2>
+
+        <!-- Productos -->
+        <div class="card producto__1">
+            <img src="/assets/productos/proteina.PNG" class="card-img-top producto__foto" alt="Tarro de Proteina">
+            <div class="card-body">
+            <h5 class="card-title">Proteina</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
         </div>
 
-        <div class="producto">
-            <h3 class="producto__nombre">Tarro de Creatina</h3>
-            <img src="../assets/productos/creatina.jfif" alt="Tarro de Creatina" class="producto__foto">
-            <div class="producto__boton"><button class="producto__ver">Ver producto</button></div>
+        <div class="card producto__2">
+            <img src="/assets/productos/creatina.jfif" class="card-img-top producto__foto" alt="Tarro de Creatina">
+            <div class="card-body">
+            <h5 class="card-title">Creatina</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
         </div>
 
-        <div class="producto">
-            <h3 class="producto__nombre">Tarro de Pre-Entreno</h3>
-            <img src="../assets/productos/pre-entreno.jpg" alt="Tarro de Pre-entreno" class="producto__foto">
-            <div class="producto__boton"><button class="producto__ver">Ver producto</button></div>
+        <div class="card producto__3">
+            <img src="/assets/productos/pre-entreno.jpg" class="card-img-top producto__foto" alt="Tarro de Pre-Entreno">
+            <div class="card-body">
+            <h5 class="card-title">Pre-Entreno</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
         </div>
 
-        <div class="producto">
-            <h3 class="producto__nombre">Shaker</h3>
-            <img src="../assets/productos/shaker.jpg" alt="Shaker" class="producto__foto">
-            <div class="producto__boton"><button class="producto__ver">Ver producto</button></div>
+        <div class="card producto__4">
+            <img src="/assets/productos/shaker.jpg" class="card-img-top producto__foto" alt="Shaker">
+            <div class="card-body">
+            <h5 class="card-title">Shaker</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
         </div>
 
-        <div class="producto">
-            <h3 class="producto__nombre">Bebida Energizante</h3>
-            <img src="../assets/productos/energizante.jpg" alt="Bebida Energizante" class="producto__foto">
-            <div class="producto__boton"><button class="producto__ver">Ver producto</button></div>
+        <div class="card producto__5">
+            <img src="/assets/productos/barra-proteica.jpg" class="card-img-top producto__foto" alt="Barrita Proteica">
+            <div class="card-body">
+            <h5 class="card-title">Barrita Proteica</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
         </div>
+
+        <!-- Seccion ¿Como Comprar? -->
+        <div class="produtos__seccion--2">
+            <div class="productos__seccion2--contenedor">
+                <h3 class="productos__seccion2--titulo">¿Cómo comprar?</h3>
+                <p class="productos__seccion2--parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, vel. Eos, ducimus nostrum vel, nisi cum modi, reprehenderit vitae aperiam officia totam sapiente magni harum pariatur consequatur dolores neque. Explicabo laborum architecto est illo distinctio quasi at, eum impedit rem ipsa voluptatibus, nobis similique ea consequuntur qui, beatae voluptates aliquam aspernatur nemo quis.</p>
+            </div>    
         </div>
     </section>
 </main>
@@ -77,5 +111,7 @@
     </div>
     <span class="contacto__copy">&copy;2022, PAMPA Gym, Derechos reservados.</span>
 </footer>
+
+<script src="/js/bootstrap.js"></script>
 </body>
 </html>

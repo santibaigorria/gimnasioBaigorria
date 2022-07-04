@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="../styles.css">
     <link rel="icon" href="../assets/img/favicon.jpeg">
     <title>Actividades</title>
@@ -11,72 +12,100 @@
 <body>
 
 <!-- Header -->
-<header>
-    <div class="navegacion">
-        <h1 class="navegacion__titulo">PAMPA Gym</h1>
-    </div>
-    <nav class="navegacion__barra">
+<header class="header">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a href="../index.html"><img src="/assets/img/logo-gym-sinfondo.png" alt="" class="navegacion__foto"></a>
+            <a class="navbar-brand text-white" href="../index.html">PAMPA Gym</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <ul class="navegacion__lista">
-            <li class="navegacion__boton"><a href="../index.html">Home</a></li>
-            <li class="navegacion__boton"><a href="./actividades.html">Actividades</a></li>
-            <li class="navegacion__boton"><a href="./productos.html">Productos</a></li>
-            <li class="navegacion__boton"><a href="./about-us.html">About us</a></li>
-            <li class="navegacion__boton"><a href="./contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../pages/actividades.html">Actividades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../pages/productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../pages/about-us.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../pages/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+          </div>
+        </div>
+      </nav>
 </header>
 
 <!-- Main -->
 <main>
-    <h2 class="actividad__titulo">¿Que actividades realizamos?</h2>
     <section class="actividad__seccion">
+        <h2 class="actividad__titulo">¿Que actividades realizamos?</h2>
         <div class="actividad__1">
-            <h3 class="actividad__nombre">Brazilian Jiu Jitsu</h3>
-                <p class="actividad__descripcion">
-                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptatem iste doloremque illo recusandae, ducimus cupiditate? Odit minima reiciendis vero velit accusantium iste dolor ratione, recusandae sint beatae. Nam, atque!
+            <h3 class="actividad__nombre--drch">Brazilian Jiu Jitsu</h3>
+                <p class="actividad__descripcion--drch">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptatem iste doloremque illo recusandae, ducimus cupiditate? Odit minima reiciendis vero velit accusantium iste dolor ratione, recusandae sint beatae. Nam, atque!
                 </p>
+        </div>
+        <div class="actividad__contenedor--1">
             <img src="../assets/img/act-1.jpg" alt="Foto Jiu Jitsu" class="actividad__foto">
         </div>
 
         <div class="actividad__2">
-            <h3 class="actividad__nombre">Boxeo</h3>
-                <p class="actividad__descripcion">
-                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptatem iste doloremque illo recusandae, ducimus cupiditate? Odit minima reiciendis vero velit accusantium iste dolor ratione, recusandae sint beatae. Nam, atque!
+            <h3 class="actividad__nombre--izq">Boxeo</h3>
+                <p class="actividad__descripcion--izq">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptatem iste doloremque illo recusandae, ducimus cupiditate? Odit minima reiciendis vero velit accusantium iste dolor ratione, recusandae sint beatae. Nam, atque!
                 </p>
-            <img src="../assets/img/act-2.jpg" alt="Foto Boxeo" class="actividad__foto"> 
+        </div>
+        <div class="actividad__contenedor--2">
+            <img src="../assets/img/act-2.jpg" alt="Foto Boxeo" class="actividad__foto">
         </div>
 
         <div class="actividad__3">
-            <h3 class="actividad__nombre">Crossfit</h3>
-                <p  class="actividad__descripcion">
-                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptatem iste doloremque illo recusandae, ducimus cupiditate? Odit minima reiciendis vero velit accusantium iste dolor ratione, recusandae sint beatae. Nam, atque!
+            <h3 class="actividad__nombre--drch">Crossfit</h3>
+                <p  class="actividad__descripcion--drch">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptatem iste doloremque illo recusandae, ducimus cupiditate? Odit minima reiciendis vero velit accusantium iste dolor ratione, recusandae sint beatae. Nam, atque!
                 </p>
+        </div>
+        <div class="actividad__contenedor--3">
             <img src="../assets/img/act-3.jpg" alt="Foto Crossfit" class="actividad__foto"> 
         </div>
 
         <div class="actividad__4">
-            <h3 class="actividad__nombre">Powerlifting</h3>
-                <p class="actividad__descripcion">
-                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptatem iste doloremque illo recusandae, ducimus cupiditate? Odit minima reiciendis vero velit accusantium iste dolor ratione, recusandae sint beatae. Nam, atque!
+            <h3 class="actividad__nombre--izq">Powerlifting</h3>
+                <p class="actividad__descripcion--izq">
+                    Lorem ipsum dolor sit amet consectetur adipisicing  elit. Explicabo voluptatem iste doloremque illo recusandae, ducimus cupiditate? Odit minima reiciendis vero velit accusantium iste dolor ratione, recusandae sint beatae. Nam, atque!
                 </p>
+        </div>
+        <div class="actividad__contenedor--4">
             <img src="../assets/img/act-4.jpg" alt="Foto PowerL" class="actividad__foto"> 
         </div>
 
         <div class="actividad__5">
-            <h3 class="actividad__nombre">Pilates</h3>
-                <p class="actividad__descripcion">
-                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptatem iste doloremque illo recusandae, ducimus cupiditate? Odit minima reiciendis vero velit accusantium iste dolor ratione, recusandae sint beatae. Nam, atque!
+            <h3 class="actividad__nombre--drch">Pilates</h3>
+                <p class="actividad__descripcion--drch">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptatem iste doloremque illo recusandae, ducimus cupiditate? Odit minima reiciendis vero velit accusantium iste dolor ratione, recusandae sint beatae. Nam, atque!
                 </p>
+        </div>
+        <div class="actividad__contenedor--5">
             <img src="../assets/img/act-5.jpg" alt="Foto Pilates" class="actividad__foto"> 
         </div>
 
         <div class="actividad__6">
-            <h3 class="actividad__nombre">Yoga</h3>
-                <p class="actividad__descripcion">
-                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptatem iste doloremque illo recusandae, ducimus cupiditate? Odit minima reiciendis vero velit accusantium iste dolor ratione, recusandae sint beatae. Nam, atque!
+            <h3 class="actividad__nombre--izq">Yoga</h3>
+                <p class="actividad__descripcion--izq">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptatem iste doloremque illo recusandae, ducimus cupiditate? Odit minima reiciendis vero velit accusantium iste dolor ratione, recusandae sint beatae. Nam, atque!
                 </p>
-            <img src="../assets/img/act-6.jpg" alt="Foto Yoga" class="actividad__foto"> 
+        </div>
+        <div class="actividad__contenedor--6">
+            <img src="../assets/img/act-6.jpg" alt="Foto Yoga" class="actividad__foto">
         </div>
     </section>
 </main>
@@ -92,5 +121,6 @@
     </div>
     <span class="contacto__copy">&copy;2022, PAMPA Gym, Derechos reservados.</span>
 </footer>
+    <script src="/js/bootstrap.js"></script>
 </body>
 </html>

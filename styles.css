@@ -2,26 +2,19 @@
     padding: 0;
     margin: 0;
     box-sizing: none;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-body{
-    background-color: rgb(10, 10, 10);
-    overflow-x:hidden;
 }
 /* ---------- Header ---------- */
-header{
-    display: flex;
-    height: 100%;
+.header{
     background-color: #881717;
-    position: sticky;
-    top: 0px;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
+    color: white;
 }
 
-    /* MEDIA QUERIS HEADER */
+.navegacion__foto{
+    width: 85px;
+}
+
+
+    /* MEDIA QUERIS HEADER
     @media screen and (min-width: 320px){
         header{
             display: flex;
@@ -41,51 +34,13 @@ header{
             display: flex;
             flex-direction: row;
             }
-    }
-
-.navegacion{
-    display: flex;
-    align-items: center;
-}
-
-.navegacion__titulo--a{
-    text-decoration: none;
-    color: white;
-}
-
-.navegacion__titulo--a:hover{
-    text-shadow: 0px 0px 27px rgba(0,0,0,0.77);
-}
-
-.navegacion__boton{
-    display: inline;
-}
-
-.navegacion__boton--a{
-    text-decoration: none;
-    color: white;
-    font-weight: 500;
-    padding-right: 7px;
-    padding-left: 7px;
-
-    transition:all 0.3s ease;
-}
-
-.threed:hover{
-    box-shadow:
-        1px 1px #6b1212,
-        2px 2px #6b1212,
-        3px 3px #6b1212;
-    -webkit-transform: translateX(-3px);
-    transform: translateX(-3px);
-}
-
+    } */
 
 /* -------------------------------------- Main Index ------------------------------------- */
     /* Seccion inicio */
 .seccionInicio{
     padding: 5vw;
-    background-image: url(./assets/img/inicio.jpg);
+    background-image: url(./assets/img/fondo-seccIni.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -150,347 +105,422 @@ header{
     justify-content: center;
 }
 
-    /* ----------Seccion Gimnasio----------- */
-.seccionGym{
+/* ------------------- Grid --------------------*/
+.grid{
+    padding: 1%;
+
     background-color: #E7ECEF;
- 
+
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: 6vh 55vh 30vh 9vh 6vh 35vh;
+
+    column-gap: 1%;
 }
 
-        /* MEDIA QUERIES SECCION GYM */
-    @media screen and (min-width: 320px){
-        .seccionGym{
-            display: flex;
-            flex-direction: column;
-        }
-
-        .seccionGym__foto{
-            width: auto;
-            max-height: 200px;
-        }
-    }
-
-    @media screen and (min-width: 600px){
-        .seccionGym__contenedor{
-            display: flex;
-            flex-direction: row;
-            overflow-x: scroll;
-        }
-    }
-
-    @media screen and (min-width: 1024px){
-        .seccionGym__titulo{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .seccionGym__contenedor{
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: repeat(2, 1fr);
-
-            overflow-x: hidden;
-        }
-    }
+/* Seccion Gimnasio */
+.seccionGym{
+    grid-column: 1 / 5;
+    grid-row: 1 / 1;
+}
 
 .seccionGym__titulo{
-    background-color: #6c757d;
-    color: white;
-
-    padding-top: 5px;
-    padding-bottom: 7px;
-
-    text-align: center;
-
-    grid-column: 1/5;
-}
-
-.seccionGym__contenedor{
-    /* background-color: rgb(209, 209, 209); */
-
-    padding-top: 6%;
-    padding-bottom: 6%;
-}
-
-    /* Futuro carrusel de fotos */
-.seccionGym__foto{
-    width: 90%;
-    padding: 10px;
-
     display: flex;
-    justify-self: center;
+    justify-content: start;
 }
 
-    /* -----------Seccion Nosotros----------- */
-.seccionNosotros{
-    background-color: #E7ECEF;
+.seccionGym__carrusel{
+    width: 50vw;
+    height: 52vh;
 
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 35px 1fr;
-    column-gap: 10px; ;
+    grid-column: 2 / 5;
+    grid-row: 2 / 2;
 }
-        /* MEDIA QUERIES SECCION NOSOTROS */
-    @media screen and (min-width: 320px) {
-        .seccionNosotros{
-            display: flex;
-            flex-direction: column;
 
-            padding: 5px;
-        }
-        
-        .seccionNosotros__titulo, .seccionNosotros__ubicacion{
-            padding: 5px;
-        }
-    }
+.seccionGym__carrusel--foto{
+    width: 50vw;
+    height: 52vh;
+}
 
-    @media screen and (min-width: 600px) {
-        .seccionNosotros{
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .seccionNosotros__titulo, .seccionNosotros__ubicacion{
-            padding: 10px;
-        }
-    }
-
-    @media screen and (min-width: 1024px) {
-        .seccionNosotros{
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: 35px 1fr;
-            column-gap: 10px; ;
-        }
-    }
-
-.seccionNosotros__titulo, .seccionNosotros__ubicacion{
-    background-color:  #6c757d;
-    color: white;
-    border-radius: 10px;
-
+.seccionGym__descripcion{
     text-align: center;
+
+    grid-column: 2 / 4;
+    grid-row: 3 / 3;
 }
 
-.seccionNosotros__titulo{
-    grid-column: 1/3;
-    grid-row: 1;
+/* Seccion Nosotros */
+.seccionNosotros__contenedor--1{
+    grid-column: 1 / 3;
+    grid-row: 5 / 5 ;
 }
 
-.seccionNosotros__ubicacion{
-    grid-column: 3/5;
-    grid-row: 1;
+.seccionNosotros__titulo--1{
+    display: flex;
+    justify-content: start;
+
+    background-color: #d1d7da;
+    border-radius: 5px;
 }
 
 .seccionNosotros__descripcion{
-    padding: 10px;
 
-    text-align: center;
+    grid-column: 1 / 3;
+    grid-row: 6 / 6;
+}
 
-    grid-column: 1/3;
-    grid-row: 2;
+.seccionNosotros__contenedor--2{
+
+    grid-column: 3 / 4;
+    grid-row: 5 / 5;
+}
+
+.seccionNosotros__titulo--2{
+    display: flex;
+    justify-content: center;
+
+    background-color: #d1d7da;
+    border-radius: 5px;
 }
 
 .seccionNosotros__descripcion--dos{
-    padding: 10px;
-    display: flex;
-    align-items: center;
-
-    text-align: center;
-
-    grid-column: 3/4;
-    grid-row: 2;
+    grid-column: 3 / 4;
+    grid-row: 6 / 6;
 }
 
 .seccionNosotros__ubicacion--mapa{
-    padding: 2%;
-    width: 100%;
-
-    display: flex;
-    justify-self: center;
-
-    border: 0;
-
-    grid-column: 4/5;
-    grid-row: 2;
-}
-    /* Seccion Actividades */
-.seccionActividades{
-    background-color: #e7ecef;
-    padding: 10px;
-}
-
-.seccionActividades__titulo{
-    background-color: #6c757d;
-    color: white;
-    padding: 10px;
-    text-align: center;
-
-    border-radius: 10px;
-}
-
-.seccionActividades__act a{
-    text-decoration: none;
-    color: black;
-}
-
-.seccionActividades__act a:hover{
-    text-decoration:underline;
+    grid-column: 4 / 5;
+    grid-row: 5 / 6;
 }
 
 /* -------------------------------------- Main Actividades ------------------------------------- */
+.actividad__seccion{
+    padding: 1%;
+
+    background-color: #E7ECEF;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 6vh repeat(6, 1fr);
+
+    column-gap: 5px;
+}
 
 .actividad__titulo{
-    padding: 10px;
-    background-color: #212529;
     display: flex;
     justify-content: center;
+
+    grid-column: 1 / 5;
+    grid-row: 1 / 1;
+}
+
+/* Bjj */
+.actividad__1{
+    grid-column: 3 / 3;
+    grid-row: 2 / 2;
+
+}
+
+.actividad__contenedor--1{
+    grid-column: 4 / 4;
+    grid-row: 2 / 2;
+}
+
+
+    /* Boxeo */
+    .actividad__2{
+        grid-column: 2 / 2;
+        grid-row: 3 / 3;
+    }
+
+    .actividad__contenedor--2{
+        grid-column: 1 / 1;
+        grid-row: 3 / 3;
+    }
+
+
+/* Crossfit */
+.actividad__3{
+    grid-column: 3 / 3;
+    grid-row: 4 / 4;
+}
+
+.actividad__contenedor--3{
+    grid-column: 4 / 4;
+    grid-row: 4 / 4;
+}
+
+
+    /*  PL */
+    .actividad__4{
+        grid-column: 2 / 2;
+        grid-row: 5 / 5;
+    }
+
+    .actividad__contenedor--4{
+        grid-column: 1 / 1;
+        grid-row: 5 / 5;
+    }
+
+
+/* Pilates */
+.actividad__5{
+    grid-column: 3 / 3;
+    grid-row: 6 / 6;
+}
+
+.actividad__contenedor--5{
+    grid-column: 4 / 4;
+    grid-row: 6 / 6;
+}
+
+
+    /* Yoga */
+    .actividad__6{
+        grid-column: 2 / 2;
+        grid-row: 7 / 7;
+    }
+
+    .actividad__contenedor--6{
+        grid-column:  1 / 1;
+        grid-row: 7 / 7;
+    }
+
+.actividad__foto{
+    border-radius: 5px;
+
+    width: 100%;
+    height: auto;
+}
+
+.actividad__nombre--drch{
+    background-color: #d1d7da;
+    border-top-left-radius: 5px;
+
+    display: flex;
+    justify-content: end;
+}
+
+.actividad__descripcion--drch{
+    display: flex;
     align-items: center;
 }
 
-.actividad__seccion{
-    background-color: #343a40;
-}
 
-/* Actividades lado izquierdo */
-.actividad__1, .actividad__3, .actividad__5{
-    padding: 5px;
+.actividad__nombre--izq{
+    background-color: #d1d7da;
+    border-top-right-radius: 5px;
+
     display: flex;
-    flex-direction: column;
+    justify-content: start;
 }
 
-/* Actividades lado derecho */
-.actividad__2, .actividad__4, .actividad__6{
-    padding: 5px;
+.actividad__descripcion--izq{
     display: flex;
-    flex-direction: column;
-}
-
-.actividad__foto{
-    width: 200px;
+    align-items: center;
 }
 
 /* -------------------------------------- Main productos ------------------------------------- */
 .productos__seccion{
     background-color: #E7ECEF;
-}
-
-.productos__contenedor{
-    padding: 20px;
 
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-row: repeat(3, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 8vh 60vh 50%;
 
-    row-gap: 20px;
-    column-gap: 20px;
-
-    justify-items: center;
+    grid-gap: 0.5%;
 }
 
-.producto__titulo, .producto__titulo--2{
-    padding: 10px;
-    background-color: #6c757d;
+.producto__titulo{
     display: flex;
     justify-content: center;
     align-items: center;
+
+    grid-column: 1 / 6;
+    grid-row: 1 / 1;
 }
 
-.producto{
-    background-color: #6c757d;
-    border-radius: 10px;
-    height: 300px;
+.producto__1{
+    width: 100%;
+    height: auto;
+
+    grid-column: 1 / 1;
+    grid-row: 2 / 2;
 }
 
-.producto__nombre{
-    text-align: center;
+.producto__2{
+    width: 100%;
+    height: auto;
+
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+}
+
+.producto__3{
+    width: 100%;
+    height: auto;
+
+    grid-column: 3 / 3;
+    grid-row: 2 / 2;
+}
+
+.producto__4{
+    width: 100%;
+    height: auto;
+
+    grid-column: 4 / 4;
+    grid-row: 2 / 2;
+}
+
+.producto__5{
+    width: 100%;
+    height: auto;
+
+    grid-column: 5 / 5;
+    grid-row: 2 / 2;
 }
 
 .producto__foto{
+    align-self: center;
+}
+
+.produtos__seccion--2{
+    background-color: #d1d7da;
+
+    /* padding: 150px; */
+
+    grid-column: 1 / 6;
+    grid-row: 3 / 3;
+}
+
+.productos__seccion2--contenedor{
+    padding: 150px;
+}
+
+.productos__seccion2--titulo{
     display: flex;
-    justify-content: center;
-
-    padding: 10px;
-    width: 200px;
-    height: 200px;
-}
-
-.producto__boton{
-    display: flex;
-    justify-content: center;
-}
-
-.producto__ver{
-    background-color: #E7ECEF;
-    color: black;
-    font-style: normal;
-    font-weight: 500;
-    font-size:medium;
-    border: 3px solid rgb(72, 72, 72);
-    border-radius: 5px;
-}
-/* -------------------------------------- Main About Us ------------------------------------- */
-.aboutUs__seccion{
-    background-color: #343a40;
-}
-
-.aboutUs__titulo{
-    background-color: #212529;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-}
-
-.aboutUs__profesor--gym{
-    padding: 5px;
-    background-color: #495057;
-}
-
-.aboutUs__profesor--artesm{
-    padding: 5px;
-    background-color:#6c757d;
-}
-
-.aboutUs__foto{
-    width: 200px;
-}
-
-/* -------------------------------------- Main contacto ------------------------------------- */
-.contacto__seccion{
-    background-color: #343a40;
-}
-
-.contacto__titulo{
-    background-color: #212529;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-}
-
-.formulario{
-    background-color: #495057;
-    height: 600px;
-
-    margin-left: 500px;
-    margin-right: 500px;
-
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.contacto__titulo--2{
-    font-size: 2rem;
-    padding: 30px;
+.productos__seccion2--parrafo{
+    text-align: center;
+}
+
+/* -------------------------------------- Main About Us ------------------------------------- */
+.aboutUs__seccion{
+    padding: 1%;
+
+    background-color: #E7ECEF;
+
+    display: grid;
+    grid-template-columns: 25vw 50vw 1fr;
+    grid-template-rows: 6vh repeat(4, 60vh) 25vh;
+
+    column-gap: 1%;
+}
+
+.aboutUs__titulo{
+    grid-column: 1 / 4;
+    grid-row: 1 / 1;
+}
+
+.aboutUs__nombre{
+    background-color: #d1d7da;
+
+    border-top-right-radius: 5px;
+}
+
+.aboutUs__profesor--gym1{
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+}
+
+.aboutUs__contenedor--img1{
+    grid-column: 1 / 1;
+    grid-row: 2 / 2;
+}
+
+
+
+.aboutUs__profesor--gym2{
+    grid-column: 2 / 2;
+    grid-row: 3 / 3;
+}
+
+.aboutUs__contenedor--img2{
+    grid-column: 1 / 1;
+    grid-row: 3 / 3;
+}
+
+
+
+.aboutUs__profesor--gym3{
+    grid-column: 2 / 2;
+    grid-row: 4 / 4;
+}
+
+.aboutUs__contenedor--img3{
+    grid-column: 1 / 1;
+    grid-row: 4 / 4;
+}
+
+
+
+.aboutUs__profesor--gym4{
+    grid-column: 2 / 2;
+    grid-row: 5 / 5;
+}
+
+.aboutUs__contenedor--img4{
+    grid-column: 1 / 1;
+    grid-row: 5 / 5;
+}
+
+.aboutUs__foto{
+    width: 100%;
+    height: 350px;
+
+    border-radius: 5px;
+}
+
+.aboutUs__equipo{
+    display:block;
+
+    grid-column: 1 / 5;
+    grid-row: 6 / 6;
+}
+
+.aboutUs__equipo--titulo{
+    text-align: center;
+}
+
+.aboutUs__equipo--parrafo{
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: center;
+}
+/* -------------------------------------- Main contacto ------------------------------------- */
+.contacto__seccion{
+    background-color: #E7ECEF;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 15vh 83vh 30vh;
+}
+
+.formulario{
+    background-color: #d1d7da;
+    border-radius: 6px;
+
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
 }
 
 /* ---------- Footer ---------- */
 footer{
-    width: 98.8%;
+    width: 100%;
     position: absolute;
     padding: 10px;
     background-color: #272932;
@@ -569,5 +599,3 @@ footer{
     background-repeat: no-repeat;
     margin: 1rem;
 }
-
-
