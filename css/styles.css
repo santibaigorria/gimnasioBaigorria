@@ -1,0 +1,171 @@
+body {
+  background: rgb(224, 224, 224);
+  background: -moz-linear-gradient(45deg, rgb(224, 224, 224) 0%, rgb(224, 224, 224) 47%, rgb(255, 255, 255) 47%, rgb(242, 242, 242) 100%);
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, rgb(224, 224, 224)), color-stop(47%, rgb(224, 224, 224)), color-stop(47%, rgb(255, 255, 255)), color-stop(100%, rgb(242, 242, 242)));
+  background: -webkit-linear-gradient(45deg, rgb(224, 224, 224) 0%, rgb(224, 224, 224) 47%, rgb(255, 255, 255) 47%, rgb(242, 242, 242) 100%);
+  background: -o-linear-gradient(45deg, rgb(224, 224, 224) 0%, rgb(224, 224, 224) 47%, rgb(255, 255, 255) 47%, rgb(242, 242, 242) 100%);
+  background: -ms-linear-gradient(45deg, rgb(224, 224, 224) 0%, rgb(224, 224, 224) 47%, rgb(255, 255, 255) 47%, rgb(242, 242, 242) 100%);
+  background: linear-gradient(45deg, rgb(224, 224, 224) 0%, rgb(224, 224, 224) 47%, rgb(255, 255, 255) 47%, rgb(242, 242, 242) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e0e0e0", endColorstr="#f2f2f2", GradientType=1);
+}
+
+h1,
+h2,
+h3,
+h5 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.seccionInicio {
+  background-image: url(/assets/img/inicio.jpg);
+  height: 91vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.seccionInicio__boton {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  background-color: rgb(109, 0, 25);
+  color: white;
+}
+.seccionInicio__boton:hover {
+  background-color: aliceblue;
+  color: rgb(109, 0, 25);
+}
+
+.actividades__row2 {
+  background-image: url(/assets/img/inicio-act.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40vh;
+}
+
+.actividades__col2 {
+  background-color: rgba(0, 0, 0, 0.355) !important;
+}
+
+.titulo__act,
+.descripcion__act {
+  color: white;
+}
+
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  transform: scale(1.1);
+}
+
+.navegacion {
+  background: rgb(169, 3, 41);
+  background: -moz-linear-gradient(left, rgb(169, 3, 41) 0%, rgb(109, 0, 25) 0%, rgb(109, 0, 25) 57%, rgb(124, 1, 29) 76%, rgb(143, 2, 34) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgb(169, 3, 41)), color-stop(0%, rgb(109, 0, 25)), color-stop(57%, rgb(109, 0, 25)), color-stop(76%, rgb(124, 1, 29)), color-stop(100%, rgb(143, 2, 34)));
+  background: -webkit-linear-gradient(left, rgb(169, 3, 41) 0%, rgb(109, 0, 25) 0%, rgb(109, 0, 25) 57%, rgb(124, 1, 29) 76%, rgb(143, 2, 34) 100%);
+  background: -o-linear-gradient(left, rgb(169, 3, 41) 0%, rgb(109, 0, 25) 0%, rgb(109, 0, 25) 57%, rgb(124, 1, 29) 76%, rgb(143, 2, 34) 100%);
+  background: -ms-linear-gradient(left, rgb(169, 3, 41) 0%, rgb(109, 0, 25) 0%, rgb(109, 0, 25) 57%, rgb(124, 1, 29) 76%, rgb(143, 2, 34) 100%);
+  background: linear-gradient(to right, rgb(169, 3, 41) 0%, rgb(109, 0, 25) 0%, rgb(109, 0, 25) 57%, rgb(124, 1, 29) 76%, rgb(143, 2, 34) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a90329", endColorstr="#8f0222", GradientType=1);
+  color: white;
+}
+.navegacion .navegacion__titulo {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: xx-large;
+}
+.navegacion .navegacion__foto {
+  width: 60px;
+}
+.navegacion .navegacion__link {
+  text-decoration: none;
+  color: white;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: medium;
+}
+.navegacion .navegacion__link:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+footer {
+  width: 100%;
+  position: absolute;
+  padding: 10px;
+  background-color: #272932;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contacto__foto {
+  height: 80px;
+  margin: 1rem;
+}
+
+.contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.contacto__copy {
+  opacity: 0.3;
+}
+
+.contacto__red--ig {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  border: 1px solid rgb(255, 255, 255);
+  background-image: url(/assets/img/instagram.png);
+  background-position: center;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  margin: 1rem;
+}
+
+.contacto__red--face {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  border: 1px solid rgb(255, 255, 255);
+  background-image: url(/assets/img/facebook.png);
+  background-position: center;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  margin: 1rem;
+}
+
+.contacto__red--wsp {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  border: 1px solid rgb(255, 255, 255);
+  background-image: url(/assets/img/whatsapp.png);
+  background-position: center;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  margin: 1rem;
+}
+
+.contacto__red--mail {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  border: 1px solid rgb(255, 255, 255);
+  background-image: url(/assets/img/correo-electronico.png);
+  background-position: center;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  margin: 1rem;
+}
+
+/*# sourceMappingURL=styles.css.map */
