@@ -1,3 +1,7 @@
+$colores: (
+    color-primario: rgba(109, 0, 25, 1),
+    letras: white
+);
 
 .seccionInicio {
     background-image: url(/assets/img/inicio.jpg);
@@ -7,12 +11,12 @@
 
     &__boton {
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        background-color: rgba(109, 0, 25, 1);
-        color: white;
+        background-color: map-get($colores, "color-primario" );
+        color: map-get($colores, "letras" );
     
         &:hover {
             background-color: aliceblue;
-            color: rgba(109, 0, 25, 1);
+            color: map-get($colores, "color-primario" );
         }
     }
 }

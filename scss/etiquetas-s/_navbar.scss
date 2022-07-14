@@ -1,4 +1,9 @@
 // ------------Navbar------------- //
+$colores: (
+    letras: white,
+    letras-hover: black
+);
+
 .navegacion {
     background: rgba(169, 3, 41, 1);
     background: -moz-linear-gradient(left, rgba(169, 3, 41, 1) 0%, rgba(109, 0, 25, 1) 0%, rgba(109, 0, 25, 1) 57%, rgba(124, 1, 29, 1) 76%, rgba(143, 2, 34, 1) 100%);
@@ -9,26 +14,26 @@
     background: linear-gradient(to right, rgba(169, 3, 41, 1) 0%, rgba(109, 0, 25, 1) 0%, rgba(109, 0, 25, 1) 57%, rgba(124, 1, 29, 1) 76%, rgba(143, 2, 34, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a90329', endColorstr='#8f0222', GradientType=1);
 
-    color: white;
+    color: map-get($colores, "letras" );
 
-    .navegacion__titulo {
+    &__titulo {
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         font-size: xx-large;
     }
 
-    .navegacion__foto {
+    &__foto {
         width: 60px;
     }
 
-    .navegacion__link {
+    &__link {
         text-decoration: none;
-        color: white;
+        color: map-get($colores, "letras" );
     
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         font-size: medium;
     
         &:hover {
-            color: black;
+            color: map-get($colores, "letras-hover" );
             text-decoration: underline;
         }
     }

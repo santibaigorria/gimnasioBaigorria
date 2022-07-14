@@ -1,81 +1,60 @@
 // ------------Footer------------- //
+@mixin centrado-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 footer {
     width: 100%;
     position: absolute;
     padding: 10px;
     background-color: #272932;
     color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include centrado-flex;
     flex-direction: column;
 }
 
-.contacto__foto {
-    height: 80px;
-    margin: 1rem;
-}
-
-.contacto {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.contacto{
+    @include centrado-flex;
     flex-wrap: wrap;
     margin-bottom: 1rem;
+
+    &__red--ig {
+        height: 50px;
+        width: 50px;
+        border-radius: 50px;
+        border: 1px solid rgb(255, 255, 255);
+        background-position: center;
+        background-size: 70%;
+        background-repeat: no-repeat;
+        margin: 1rem;
+    }
+
+    &__red--ig{
+        background-image: url(/assets/img/instagram.png);
+    }
+    &__red--face{
+        background-image: url(/assets/img/facebook.png);
+    }
+    &__red--wsp{
+        background-image: url(/assets/img/whatsapp.png);
+    }
+
+    &__red--mail{
+        background-image: url(/assets/img/correo-electronico.png);
+    }
+
+    &__foto {
+        height: 80px;
+        margin: 1rem;
+    }
+
+    &__copy {
+        opacity: 0.3;
+    }
 }
 
-.contacto__copy {
-    opacity: 0.3;
-}
-
-// Instagram //
-.contacto__red--ig {
-    height: 50px;
-    width: 50px;
-    border-radius: 50px;
-    border: 1px solid rgb(255, 255, 255);
-    background-image: url(/assets/img/instagram.png);
-    background-position: center;
-    background-size: 60%;
-    background-repeat: no-repeat;
-    margin: 1rem;
-}
-
-// Facebook //
-.contacto__red--face {
-    height: 50px;
-    width: 50px;
-    border-radius: 50px;
-    border: 1px solid rgb(255, 255, 255);
-    background-image: url(/assets/img/facebook.png);
-    background-position: center;
-    background-size: 60%;
-    background-repeat: no-repeat;
-    margin: 1rem;
-}
-
-// Whatsapp //
-.contacto__red--wsp {
-    height: 50px;
-    width: 50px;
-    border-radius: 50px;
-    border: 1px solid rgb(255, 255, 255);
-    background-image: url(/assets/img/whatsapp.png);
-    background-position: center;
-    background-size: 60%;
-    background-repeat: no-repeat;
-    margin: 1rem;
-}
-
-// Correo //
-.contacto__red--mail {
-    height: 50px;
-    width: 50px;
-    border-radius: 50px;
-    border: 1px solid rgb(255, 255, 255);
-    background-image: url(/assets/img/correo-electronico.png);
-    background-position: center;
-    background-size: 60%;
-    background-repeat: no-repeat;
-    margin: 1rem;
+.contacto__red--face, .contacto__red--wsp, .contacto__red--mail{
+    @extend .contacto__red--ig;
 }

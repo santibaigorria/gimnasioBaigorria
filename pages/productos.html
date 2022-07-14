@@ -1,81 +1,138 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="icon" href="../assets/img/favicon.jpeg">
-    <title>Productos</title>
+    <meta name="description" content="Los suplementos que necesitas para potenciar tus entrenamientos">
+    <title>Productos | Proteina, Creatina, Shakers y más.</title>
 </head>
+
 <body>
 
-<!-- Header -->
-<header>
-    <div class="navegacion">
-        <h1 class="navegacion__titulo">PAMPA Gym</h1>
-    </div>
-    <nav class="navegacion__barra">
+    <!-- Header -->
+    <header>
+        <div class="container-fluid">
+        <div class="row">
+            <!-- Empieza la navbar -->
+            <nav class="navbar navbar-expand-lg navegacion">
+                <div class="container-fluid">
+                    <div class="px-1"><a href="../index.html"><img src="/assets/img/logo-gym-sinfondo.png"
+                                alt="Pampa Gym" class="navegacion__foto"></a></div>
+                    <a class="navbar-brand text-white navegacion__titulo" href="../index.html">PAMPA Gym</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link text-white hvr-grow navegacion__link" aria-current="page"
+                                    href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white hvr-grow navegacion__link"
+                                    href="../pages/actividades.html">Actividades</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white hvr-grow navegacion__link"
+                                    href="../pages/productos.html">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white hvr-grow navegacion__link"
+                                    href="../pages/about-us.html">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white hvr-grow navegacion__link"
+                                    href="../pages/contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Termina la navbar -->
+        </div>
+    </header>
 
-        <ul class="navegacion__lista">
-            <li class="navegacion__boton"><a href="../index.html">Home</a></li>
-            <li class="navegacion__boton"><a href="./actividades.html">Actividades</a></li>
-            <li class="navegacion__boton"><a href="./productos.html">Productos</a></li>
-            <li class="navegacion__boton"><a href="./about-us.html">About us</a></li>
-            <li class="navegacion__boton"><a href="./contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
-</header>
+    <!-- Main -->
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 pt-2">
+                    <h1 class="d-flex justify-content-center">NUESTROS PRODUCTOS</h1>
+                </div>
+            </div>
 
-<!-- Main -->
-<main>
-    <section class="productos__seccion">
-        <h2 class="producto__titulo">Productos que ofrecemos:</h2>
-        <h5 class="producto__titulo--2">(Solo compra en mostrador)</h5>
-        <div class="productos__contenedor">
-        <div class="producto">
-            <h3 class="producto__nombre">Tarro de Proteina</h3>
-            <img src="../assets/productos/proteina.PNG" alt="Tarro de Proteina" class="producto__foto">
-            <div class="producto__boton"><button class="producto__ver">Ver producto</button></div>
+            <div class="row py-4 row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card">
+                        <img src="/assets/productos/creatina.jpg" class="card-img-top" alt="Imagen de Creatina">
+                        <div class="card-body">
+                            <h5 class="card-title">Creatina</h5>
+                            <p class="card-text">Te ofrecemos una Creatina de muy buena calidad, para que tus progresos sean aún mas rápidos al lado nuestro.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="/assets/productos/proteina.jpg" class="card-img-top" alt="Imagen de Proteina">
+                        <div class="card-body">
+                            <h5 class="card-title py-2 d-flex justify-content-center">Whey Protein</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="/assets/productos/pre-entreno.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="/assets/productos/shaker.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <div class="row py-5">
+            <div class="col-12 py-5">
+                <h2 class="d-flex justify-content-center">¿Como comprar?</h2>
+                <p class="d-inline align-self-center">Para realizar la compra de cualquiera de estos productos, tenes que acercarte al mostrador y preguntar por el precio del mismo. Podes abonar con Tarjetas de Debito, Deposito Bancario o Transferencia. Los productos se piden por encargo al profesor Roberto.
+                </p>
+            </div>
         </div>
 
-        <div class="producto">
-            <h3 class="producto__nombre">Tarro de Creatina</h3>
-            <img src="../assets/productos/creatina.jfif" alt="Tarro de Creatina" class="producto__foto">
-            <div class="producto__boton"><button class="producto__ver">Ver producto</button></div>
         </div>
+    </main>
 
-        <div class="producto">
-            <h3 class="producto__nombre">Tarro de Pre-Entreno</h3>
-            <img src="../assets/productos/pre-entreno.jpg" alt="Tarro de Pre-entreno" class="producto__foto">
-            <div class="producto__boton"><button class="producto__ver">Ver producto</button></div>
+    <!-- Footer -->
+    <footer>
+        <img src="../assets/img/logo-gym-sinfondo.png" alt="Logo Gym" class="contacto__foto">
+        <div class="contacto">
+            <a href="" class="contacto__red--ig"></a>
+            <a href="" class="contacto__red--face"></a>
+            <a href="" class="contacto__red--wsp"></a>
+            <a href="" class="contacto__red--mail"></a>
         </div>
-
-        <div class="producto">
-            <h3 class="producto__nombre">Shaker</h3>
-            <img src="../assets/productos/shaker.jpg" alt="Shaker" class="producto__foto">
-            <div class="producto__boton"><button class="producto__ver">Ver producto</button></div>
-        </div>
-
-        <div class="producto">
-            <h3 class="producto__nombre">Bebida Energizante</h3>
-            <img src="../assets/productos/energizante.jpg" alt="Bebida Energizante" class="producto__foto">
-            <div class="producto__boton"><button class="producto__ver">Ver producto</button></div>
-        </div>
-        </div>
-    </section>
-</main>
-
-<!-- Footer -->
-<footer>
-    <img src="../assets/img/logo-gym-sinfondo.png" alt="Logo Gym" class="contacto__foto">
-    <div class="contacto">
-        <a href="" class="contacto__red--ig"></a>
-        <a href="" class="contacto__red--face"></a>
-        <a href="" class="contacto__red--wsp"></a>
-        <a href="" class="contacto__red--mail"></a>
-    </div>
-    <span class="contacto__copy">&copy;2022, PAMPA Gym, Derechos reservados.</span>
-</footer>
+        <span class="contacto__copy">&copy;2022, PAMPA Gym, Derechos reservados.</span>
+    </footer>
+    <!-- Scripts -->
+    <script src="/js/bootstrap.js"></script>
 </body>
+
 </html>
