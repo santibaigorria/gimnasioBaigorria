@@ -228,6 +228,22 @@ hr {
   transform: scale(1.1);
 }
 
+.contacto__red--ig:hover, .contacto__red--face:hover, .contacto__red--wsp:hover, .contacto__red--mail:hover {
+  background-image: url(/assets/img/instagram-hover.png);
+}
+
+.contacto__red--face:hover {
+  background-image: url(/assets/img/facebook-hover.png);
+}
+
+.contacto__red--wsp:hover {
+  background-image: url(/assets/img/whatsapp-hover.png);
+}
+
+.contacto__red--mail:hover {
+  background-image: url(/assets/img/correo-electronico-hover.png);
+}
+
 .navegacion {
   color: white;
 }
@@ -241,6 +257,10 @@ hr {
 .navegacion__link:hover {
   color: black !important;
   text-decoration: underline;
+}
+
+.offcanvas {
+  background-color: #272932;
 }
 
 footer {
@@ -266,23 +286,23 @@ footer {
   height: 50px;
   width: 50px;
   border-radius: 50px;
-  border: 1px solid rgb(255, 255, 255);
+  border: 3px solid rgb(0, 0, 0);
   background-position: center;
   background-size: 70%;
   background-repeat: no-repeat;
   margin: 1rem;
 }
 .contacto__red--ig, .contacto__red--face, .contacto__red--wsp, .contacto__red--mail {
-  background-image: url(/assets/img/instagram.png);
+  background-image: url(/assets/img/instagram2.png);
 }
 .contacto__red--face {
-  background-image: url(/assets/img/facebook.png);
+  background-image: url(/assets/img/facebook-2.png);
 }
 .contacto__red--wsp {
-  background-image: url(/assets/img/whatsapp.png);
+  background-image: url(/assets/img/whatsapp2.png);
 }
 .contacto__red--mail {
-  background-image: url(/assets/img/correo-electronico.png);
+  background-image: url(/assets/img/correo-electronico2.png);
 }
 .contacto__foto {
   height: 80px;

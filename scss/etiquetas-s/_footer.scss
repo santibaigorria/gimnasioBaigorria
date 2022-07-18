@@ -18,7 +18,7 @@ footer {
         height: 50px;
         width: 50px;
         border-radius: 50px;
-        border: 1px solid rgb(255, 255, 255);
+        border: 3px solid rgb(0, 0, 0);
         background-position: center;
         background-size: 70%;
         background-repeat: no-repeat;
@@ -26,17 +26,17 @@ footer {
     }
 
     &__red--ig{
-        background-image: url(/assets/img/instagram.png);
+        background-image: url(/assets/img/instagram2.png);
     }
     &__red--face{
-        background-image: url(/assets/img/facebook.png);
+        background-image: url(/assets/img/facebook-2.png);
     }
     &__red--wsp{
-        background-image: url(/assets/img/whatsapp.png);
+        background-image: url(/assets/img/whatsapp2.png);
     }
 
     &__red--mail{
-        background-image: url(/assets/img/correo-electronico.png);
+        background-image: url(/assets/img/correo-electronico2.png);
     }
 
     &__foto {
