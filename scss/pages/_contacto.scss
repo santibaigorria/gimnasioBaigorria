@@ -1,19 +1,49 @@
-.seccionContacto{
+.seccionContacto {
     background-image: url(/assets/img/inicioContacto.jpg);
     @include portadas;
     background-position: center;
 
-    &__contenedor{
+    &__contenedor {
         padding: 20vh;
     }
 
     &__titulo,
-    &__descripcion{
-        color: map-get($colores, "letras" );
+    &__descripcion {
+        color: map-get($colores, "letras");
     }
 }
 
-.btn{
+.btn {
     background-color: map-get($colores, "color-primario");
     color: map-get($colores, "letras");
+}
+
+//-------------MQ------------//
+
+//Dispositivo movil pequeño
+@media (max-width: 575px) {
+    .seccionContacto__contenedor {
+        padding: 5vh;
+    }
+}
+
+//Dispositivo movil
+@media (min-width: 576px) and (max-width: 767px) {
+    .seccionContacto__contenedor {
+        padding: 10vh;
+    }
+}
+
+//Tablet
+@media (min-width: 768px) and (max-width: 991px) {
+    .seccionContacto__contenedor {
+        padding: 15vh;
+    }
+}
+
+//PC de escritorio
+@media (min-width: 992px) {
+    .seccionContacto__contenedor {
+        padding: 20vh;
+    }
 }
