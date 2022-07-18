@@ -1,0 +1,13 @@
+.seccionAbout{
+    background-image: url(/assets/img/inicioAbout.jpg);
+    @include portadas;
+    background-position: center;
+
+    &__contenedor{
+        padding: 20vh;
+    }
+    &__titulo,
+    &__descripcion{
+        color: map-get($colores, "letras" );
+    }
+}

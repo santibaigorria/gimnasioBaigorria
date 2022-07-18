@@ -1,18 +1,33 @@
 // -------------Main------------- //
-.actividades__row2 {
-    background-image: url(/assets/img/inicio-act.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+.seccionAct {
+    background-image: url(/assets/img/inicioAct.jpg);
+    @include portadas;
 
-    height: 40vh;
+    &__contenedor{
+        padding: 17.3vh !important; 
+    }
+
+    &__subtitulo {
+        color: black;
+    }
+    &__titulo,
+    &__descripcion {
+        color: map-get($colores, "letras" );
+    }
 }
 
-.actividades__col2 {
-    background-color: rgba(0, 0, 0, 0.355) !important;
+.seccionAct__contenedor{
+    padding: 20vh;
 }
 
-.titulo__act,
-.descripcion__act {
-    color: white;
+.act__contenedor {
+    border-radius: 0%;
+    border-color: white;
 
+    .act__imagen {
+        border-radius: 5px;
+    }
+    .act__titulo {
+        background-color: rgba(231, 231, 231, 0.404);
+    }
 }

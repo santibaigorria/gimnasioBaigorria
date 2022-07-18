@@ -1,0 +1,19 @@
+.seccionContacto{
+    background-image: url(/assets/img/inicioContacto.jpg);
+    @include portadas;
+    background-position: center;
+
+    &__contenedor{
+        padding: 20vh;
+    }
+
+    &__titulo,
+    &__descripcion{
+        color: map-get($colores, "letras" );
+    }
+}
+
+.btn{
+    background-color: map-get($colores, "color-primario");
+    color: map-get($colores, "letras");
+}

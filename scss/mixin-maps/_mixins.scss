@@ -1,0 +1,10 @@
+@mixin centrado-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin portadas{
+    background-size: cover;
+    background-repeat: no-repeat;
+}

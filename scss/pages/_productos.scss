@@ -1,0 +1,14 @@
+.seccionProduc{
+    background-image: url(/assets/img/inicioProduc.jpg);
+    @include portadas;
+
+    &__contenedor{
+        padding: 20vh;
+    }
+    &__titulo{
+        color: map-get($colores, "letras" );
+    }
+    &__descripcion{
+        color: map-get($colores, "letras" );
+    }
+}

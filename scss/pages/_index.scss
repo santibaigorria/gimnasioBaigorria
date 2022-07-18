@@ -1,22 +1,14 @@
-$colores: (
-    color-primario: rgba(109, 0, 25, 1),
-    letras: white
-);
-
 .seccionInicio {
-    background-image: url(/assets/img/inicio.jpg);
-    height: 91vh;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url(/assets/img/inicioIndex.jpg);
+    @include portadas;
 
     &__boton {
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        background-color: map-get($colores, "color-primario" );
-        color: map-get($colores, "letras" );
-    
+        background-color: map-get($colores, "color-primario");
+        color: map-get($colores, "letras");
+
         &:hover {
             background-color: aliceblue;
-            color: map-get($colores, "color-primario" );
+            color: map-get($colores, "color-primario");
         }
     }
 }

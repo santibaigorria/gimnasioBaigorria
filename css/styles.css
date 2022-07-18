@@ -1,30 +1,33 @@
 body {
-  background: rgb(224, 224, 224);
-  background: -moz-linear-gradient(45deg, rgb(224, 224, 224) 0%, rgb(224, 224, 224) 47%, rgb(255, 255, 255) 47%, rgb(242, 242, 242) 100%);
-  background: -webkit-gradient(left bottom, right top, color-stop(0%, rgb(224, 224, 224)), color-stop(47%, rgb(224, 224, 224)), color-stop(47%, rgb(255, 255, 255)), color-stop(100%, rgb(242, 242, 242)));
-  background: -webkit-linear-gradient(45deg, rgb(224, 224, 224) 0%, rgb(224, 224, 224) 47%, rgb(255, 255, 255) 47%, rgb(242, 242, 242) 100%);
-  background: -o-linear-gradient(45deg, rgb(224, 224, 224) 0%, rgb(224, 224, 224) 47%, rgb(255, 255, 255) 47%, rgb(242, 242, 242) 100%);
-  background: -ms-linear-gradient(45deg, rgb(224, 224, 224) 0%, rgb(224, 224, 224) 47%, rgb(255, 255, 255) 47%, rgb(242, 242, 242) 100%);
-  background: linear-gradient(45deg, rgb(224, 224, 224) 0%, rgb(224, 224, 224) 47%, rgb(255, 255, 255) 47%, rgb(242, 242, 242) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e0e0e0", endColorstr="#f2f2f2", GradientType=1);
+  font-family: "Palanquin", sans-serif;
 }
 
 h1,
+.navegacion__titulo {
+  font-family: "Passion One", cursive;
+  font-size: 2rem;
+}
+
+.seccionInicio__boton {
+  font-family: "Passion One", cursive;
+  font-size: 1.5rem;
+}
+
 h2,
 h3,
 h4,
-h5 {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+h5,
+h6,
+.navegacion__link {
+  font-family: "Heebo", sans-serif;
 }
 
 .seccionInicio {
-  background-image: url(/assets/img/inicio.jpg);
-  height: 91vh;
-  background-repeat: no-repeat;
+  background-image: url(/assets/img/inicioIndex.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .seccionInicio__boton {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   background-color: rgb(109, 0, 25);
   color: white;
 }
@@ -33,19 +36,79 @@ h5 {
   color: rgb(109, 0, 25);
 }
 
-.actividades__row2 {
-  background-image: url(/assets/img/inicio-act.jpg);
-  background-repeat: no-repeat;
+.seccionAct {
+  background-image: url(/assets/img/inicioAct.jpg);
   background-size: cover;
-  height: 40vh;
+  background-repeat: no-repeat;
+}
+.seccionAct__contenedor {
+  padding: 17.3vh !important;
+}
+.seccionAct__subtitulo {
+  color: black;
+}
+.seccionAct__titulo, .seccionAct__descripcion {
+  color: white;
 }
 
-.actividades__col2 {
-  background-color: rgba(0, 0, 0, 0.355) !important;
+.seccionAct__contenedor {
+  padding: 20vh;
 }
 
-.titulo__act,
-.descripcion__act {
+.act__contenedor {
+  border-radius: 0%;
+  border-color: white;
+}
+.act__contenedor .act__imagen {
+  border-radius: 5px;
+}
+.act__contenedor .act__titulo {
+  background-color: rgba(231, 231, 231, 0.404);
+}
+
+.seccionProduc {
+  background-image: url(/assets/img/inicioProduc.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.seccionProduc__contenedor {
+  padding: 20vh;
+}
+.seccionProduc__titulo {
+  color: white;
+}
+.seccionProduc__descripcion {
+  color: white;
+}
+
+.seccionAbout {
+  background-image: url(/assets/img/inicioAbout.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.seccionAbout__contenedor {
+  padding: 20vh;
+}
+.seccionAbout__titulo, .seccionAbout__descripcion {
+  color: white;
+}
+
+.seccionContacto {
+  background-image: url(/assets/img/inicioContacto.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.seccionContacto__contenedor {
+  padding: 20vh;
+}
+.seccionContacto__titulo, .seccionContacto__descripcion {
+  color: white;
+}
+
+.btn {
+  background-color: rgb(109, 0, 25);
   color: white;
 }
 
@@ -64,19 +127,7 @@ h5 {
 }
 
 .navegacion {
-  background: rgb(169, 3, 41);
-  background: -moz-linear-gradient(left, rgb(169, 3, 41) 0%, rgb(109, 0, 25) 0%, rgb(109, 0, 25) 57%, rgb(124, 1, 29) 76%, rgb(143, 2, 34) 100%);
-  background: -webkit-gradient(left top, right top, color-stop(0%, rgb(169, 3, 41)), color-stop(0%, rgb(109, 0, 25)), color-stop(57%, rgb(109, 0, 25)), color-stop(76%, rgb(124, 1, 29)), color-stop(100%, rgb(143, 2, 34)));
-  background: -webkit-linear-gradient(left, rgb(169, 3, 41) 0%, rgb(109, 0, 25) 0%, rgb(109, 0, 25) 57%, rgb(124, 1, 29) 76%, rgb(143, 2, 34) 100%);
-  background: -o-linear-gradient(left, rgb(169, 3, 41) 0%, rgb(109, 0, 25) 0%, rgb(109, 0, 25) 57%, rgb(124, 1, 29) 76%, rgb(143, 2, 34) 100%);
-  background: -ms-linear-gradient(left, rgb(169, 3, 41) 0%, rgb(109, 0, 25) 0%, rgb(109, 0, 25) 57%, rgb(124, 1, 29) 76%, rgb(143, 2, 34) 100%);
-  background: linear-gradient(to right, rgb(169, 3, 41) 0%, rgb(109, 0, 25) 0%, rgb(109, 0, 25) 57%, rgb(124, 1, 29) 76%, rgb(143, 2, 34) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a90329", endColorstr="#8f0222", GradientType=1);
   color: white;
-}
-.navegacion__titulo {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-size: xx-large;
 }
 .navegacion__foto {
   width: 60px;
@@ -84,11 +135,9 @@ h5 {
 .navegacion__link {
   text-decoration: none;
   color: white;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-size: medium;
 }
 .navegacion__link:hover {
-  color: black;
+  color: black !important;
   text-decoration: underline;
 }
 
