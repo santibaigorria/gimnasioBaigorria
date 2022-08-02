@@ -1,0 +1,61 @@
+.seccionAbout {
+    background-image: url(/assets/img/inicioAbout.jpg);
+    @include portadas;
+    background-position: center;
+
+    &__contenedor {
+        padding: 20vh;
+    }
+
+    &__titulo,
+    &__descripcion {
+        color: map-get($colores, "letras");
+    }
+}
+
+.seccionProfe {
+    &__nombre {
+        @include centrado-flex;
+    }
+
+    &__foto {
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+    }
+
+    &__descripcion {
+        background-color: rgb(243, 243, 243);
+        border-bottom-right-radius: 4px;
+        border-bottom-left-radius: 4px;
+    }
+}
+
+//-------------MQ------------//
+
+//Dispositivo movil pequeño
+@media (max-width: 575px) {
+    .seccionAbout__contenedor {
+        padding: 5vh;
+    }
+}
+
+//Dispositivo movil
+@media (min-width: 576px) and (max-width: 767px) {
+    .seccionAbout__contenedor {
+        padding: 10vh;
+    }
+}
+
+//Tablet
+@media (min-width: 768px) and (max-width: 991px) {
+    .seccionAbout__contenedor {
+        padding: 15vh;
+    }
+}
+
+//PC de escritorio
+@media (min-width: 992px) {
+    .seccionAbout__contenedor {
+        padding: 20vh;
+    }
+}

@@ -1,0 +1,22 @@
+.seccionInicio {
+    background-image: url(/assets/img/inicioIndex.jpg);
+    @include portadas;
+
+    &__titulo {
+        color: map-get($colores, "letras");
+    }
+
+    &__boton {
+        background-color: map-get($colores, "color-primario");
+        color: map-get($colores, "letras");
+
+        &:hover {
+            background-color: aliceblue;
+            color: map-get($colores, "color-primario");
+        }
+    }
+}
+
+hr {
+    border: 2px solid black;
+}

@@ -1,97 +1,148 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <link rel="icon" href="../assets/img/favicon.jpeg">
-    <title>About us</title>
+    <style type="text/css"></style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@500&family=Palanquin:wght@200&family=Passion+One&display=swap"
+        rel="stylesheet">
+    <meta name="description" content="La mejor atención y asesoría a tu alcance.">
+    <title>About | Conocé a nuestro equipo de profesores!</title>
 </head>
+
 <body>
-
-<!-- Header -->
-<header class="header">
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <a href="../index.html"><img src="/assets/img/logo-gym-sinfondo.png" alt="" class="navegacion__foto"></a>
-            <a class="navbar-brand text-white" href="../index.html">PAMPA Gym</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="../index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="../pages/actividades.html">Actividades</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="../pages/productos.html">Productos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="../pages/about-us.html">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="../pages/contacto.html">Contacto</a>
-                    </li>
-                </ul>
-          </div>
+    <!-- Header -->
+    <header class="seccionAbout">
+        <div class="container">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg navegacion">
+                    <div class="container-fluid">
+                        <div><a href="../index.html"><img src="/assets/img/logo-gym-sinfondo.png" alt="Pampa Gym"
+                                    class="navegacion__foto"></a></div>
+                        <a class="navbar-brand text-white navegacion__titulo" href="../index.html">PAMPA Gym</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="offcanvas offcanvas-end" tabindex="w-100" id="offcanvasNavbar"
+                            aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                                <p class="offcanvas-title navegacion__titulo" id="offcanvasNavbarLabel">PAMPA Gym</p>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white hvr-grow navegacion__link" aria-current="page"
+                                            href="../index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white hvr-grow navegacion__link"
+                                            href="../pages/actividades.html">Actividades</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white hvr-grow navegacion__link"
+                                            href="../pages/productos.html">Productos</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white hvr-grow navegacion__link"
+                                            href="../pages/about-us.html">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white hvr-grow navegacion__link"
+                                            href="../pages/contacto.html">Contacto</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
         </div>
-      </nav>
-</header>
 
-<!-- Main -->
-<main>
-    <section class="aboutUs__seccion">
-        <h2 class="aboutUs__titulo">¿Quienes forman nuestro equipo?</h2>
-
-        <div class="aboutUs__profesor--gym1">
-            <h3 class="aboutUs__nombre">Juan Baigorria</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, at?</p>
+        <div class="d-flex justify-content-center align-items-center">
+            <div class="content text-center seccionAbout__contenedor">
+                <h1 class="d-flex justify-content-center seccionAbout__titulo">¿Quienes somos?</h1>
+                <p class="seccionAbout__descripcion">
+                    Pampa Gym nace con la idea de ayudar a las personas a lograr ese cambio que siempre buscaron, ya sea
+                    bajar o subir de peso, ganar fuerza o resistencia, entre otras cosas. Y ese cambio, nosotros lo
+                    podemos lograr. Contamos con un equipo dispuesto y capacitado; tenemos areas de entrenamiento de
+                    todo tipo para que no te quedes con lo común y te animes a probar nuevas experiencias.
+                </p>
+            </div>
         </div>
-        <div class="aboutUs__contenedor--img1"><img src="../assets/img/profesor-1.jpg" alt="Profesor Juan" class="aboutUs__foto"></div>
+    </header>
 
-        <div class="aboutUs__profesor--gym2">
-            <h3 class="aboutUs__nombre">Roberto</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, voluptatum quisquam magnam quo quia architecto commodi laudantium? Libero omnis repellat explicabo tempore vero sit. Nemo, laboriosam magnam. Cum, ullam minima!</p>
+    <!-- Main -->
+    <main>
+        <section class="container">
+            <h3 class="seccionProfe d-flex justify-content-center py-3">Nuestros Profes!</h3>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 pt-3 col-md-4 col-lg-4 col-xl-3 col-xxl-3">
+                    <h4 class="seccionProfe__nombre" id="profeJuan">Juan Baigorria</h4>
+                    <div class="seccionProfe__contenedor">
+                        <img src="/assets/img/profesor-1.jpg" alt="Profesor Juan" class="w-100 seccionProfe__foto">
+                        <p class="d-flex text-center seccionProfe__descripcion">Mi nombre es Juan y estoy a cargo de
+                            actividades como Jiujitsu y Boxeo, mi objetivo es que aprendas defensa personal para estar
+                            siempre listo.</p>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 pt-3 col-md-4 col-lg-4 col-xl-3 col-xxl-3">
+                    <h4 class="seccionProfe__nombre" id="profeRober">Roberto Rosane</h4>
+                    <div class="seccionProfe__contenedor">
+                        <img src="/assets/img/profesor-2.jpg" alt="Profesor Roberto" class="w-100 seccionProfe__foto">
+                        <p class="d-flex text-center seccionProfe__descripcion">Estoy a cargo de las actividades de
+                            Crossfit, vamos a mejorar tu resistencia tanto como tu fuerza para que puedas realizar cualquier deporte ¡Vamos a entrenar como se debe!</p>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 pt-3 col-md-4 col-lg-4 col-xl-3 col-xxl-3">
+                    <h4 class="seccionProfe__nombre" id="profeLean">Leandro Guzmán</h4>
+                    <div class="seccionProfe__contenedor">
+                        <img src="/assets/img/profesor-3.jpg" alt="Profesor Leandro" class="w-100 seccionProfe__foto">
+                        <p class="d-flex text-center seccionProfe__descripcion">Soy Lean, profe de Yoga y Pilates.
+                            También me dedico a la preparación militar como deportiva, ¡No dudes en acercarte a consultar
+                            lo que sea!</p>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 pt-3 col-md-4 col-lg-4 col-xl-3 col-xxl-3">
+                    <h4 class="seccionProfe__nombre" id="profeChino">Thiago 'Chino' Rossi</h4>
+                    <div class="seccionProfe__contenedor">
+                        <img src="/assets/img/profesor-4.jpg" alt="Profesor Chino" class="w-100 seccionProfe__foto">
+                        <p class="d-flex text-center seccionProfe__descripcion">Soy "Chino" y estoy a cargo del sector
+                            de Powerlifting. Conmigo tus entrenamitentos van a ser diferentes, vamos a entrenar la
+                            fuerza levantando pesos muy pesados!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <img src="../assets/img/logo-gym-sinfondo.png" alt="Logo Gym" class="contacto__foto">
+        <div class="contacto">
+            <a href="https://www.instagram.com/pampa_gym/" target="_blank" class="contacto__red--ig"></a>
+            <a href="https://www.facebook.com/" target="_blank" class="contacto__red--face"></a>
+            <a href="https://www.whatsapp.com/" target="_blank" class="contacto__red--wsp"></a>
+            <a href="https://outlook.live.com/mail/0/" target="_blank" class="contacto__red--mail"></a>
         </div>
-        <div class="aboutUs__contenedor--img2"><img src="../assets/img/profesor-2.jpg" alt="Profesor Roberto" class="aboutUs__foto"></div>
+        <span class="contacto__copy">&copy;2022, PAMPA Gym, Derechos reservados.</span>
+    </footer>
 
-        <div class="aboutUs__profesor--gym3">
-            <h3 class="aboutUs__nombre">Vanina Rossi</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In reiciendis fugit vel, fuga id corrupti velit.</p>
-        </div>
-        <div class="aboutUs__contenedor--img3"><img src="../assets/img/profesor-3.png" alt="Profe Yanina" class="aboutUs__foto"></div>
-
-        <div class="aboutUs__profesor--gym4">
-            <h3 class="aboutUs__nombre">Leandro Guzman</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, velit ipsum? Pariatur soluta temporibus veniam magnam ducimus itaque ab nihil.</p>
-        </div>
-        <div class="aboutUs__contenedor--img4"><img src="../assets/img/profesor 4.jpg" alt="Profesor Leandro" class="aboutUs__foto"></div>
-
-
-        <div class="aboutUs__equipo">
-            <h4 class="aboutUs__equipo--titulo">Somos un equipo...</h3>
-            <p class="aboutUs__equipo--parrafo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum fugiat minus at ipsa, quae provident itaque quibusdam id velit in suscipit fugit voluptates laboriosam dolores consectetur officiis accusamus officia eligendi?</p>
-        </div>
-    </section>
-</main>
-
-<!-- Footer -->
-<footer>
-    <img src="../assets/img/logo-gym-sinfondo.png" alt="Logo Gym" class="contacto__foto">
-    <div class="contacto">
-        <a href="" class="contacto__red--ig"></a>
-        <a href="" class="contacto__red--face"></a>
-        <a href="" class="contacto__red--wsp"></a>
-        <a href="" class="contacto__red--mail"></a>
-    </div>
-    <span class="contacto__copy">&copy;2022, PAMPA Gym, Derechos reservados.</span>
-</footer>
-    <script src="/js/bootstrap.js"></script>
+    <!-- Scripts -->
+    <script src="./js/bootstrap.min.js"></script>
 </body>
+
 </html>

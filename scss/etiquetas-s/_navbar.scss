@@ -1,0 +1,22 @@
+// ------------Navbar------------- //
+.navegacion {
+    color: map-get($colores, "letras" );
+
+    &__foto {
+        width: 60px;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: map-get($colores, "letras" );
+
+        &:hover {
+            color: map-get($colores, "letras-hover" )!important;
+            text-decoration: underline;
+        }
+    }
+}
+
+.offcanvas{
+    background-color: #272932;
+}

@@ -1,0 +1,54 @@
+// ------------Footer------------- //
+footer {
+    width: 100%;
+    position: absolute;
+    padding: 10px;
+    background-color: #272932;
+    color: white;
+    @include centrado-flex;
+    flex-direction: column;
+}
+
+.contacto{
+    @include centrado-flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+
+    &__red--ig {
+        height: 50px;
+        width: 50px;
+        border-radius: 50px;
+        border: 3px solid rgb(0, 0, 0);
+        background-position: center;
+        background-size: 70%;
+        background-repeat: no-repeat;
+        margin: 1rem;
+    }
+
+    &__red--ig{
+        background-image: url(/assets/img/instagram2.png);
+    }
+    &__red--face{
+        background-image: url(/assets/img/facebook-2.png);
+    }
+    &__red--wsp{
+        background-image: url(/assets/img/whatsapp2.png);
+    }
+
+    &__red--mail{
+        background-image: url(/assets/img/correo-electronico2.png);
+    }
+
+    &__foto {
+        height: 80px;
+        margin: 1rem;
+    }
+
+    &__copy {
+        opacity: 0.3;
+    }
+}
+
+.contacto__red--face, .contacto__red--wsp, .contacto__red--mail{
+    @extend .contacto__red--ig;
+}

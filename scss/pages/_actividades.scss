@@ -1,0 +1,75 @@
+// -------------Main------------- //
+.seccionAct {
+    background-image: url(/assets/img/inicioAct.jpg);
+    @include portadas;
+
+    &__contenedor {
+        padding: 17.3vh;
+    }
+
+    &__subtitulo {
+        color: black;
+    }
+
+    &__titulo,
+    &__descripcion {
+        color: map-get($colores, "letras");
+    }
+
+    &__profe{
+        text-decoration: none;
+        color: grey;
+
+        &:hover{
+            text-decoration: underline;
+            color: map-get($colores, "letras-hover");
+        }
+    }
+}
+
+.seccionAct__contenedor {
+    padding: 20vh;
+}
+
+.act__contenedor {
+    border-radius: 0%;
+    border-color: white;
+
+    .act__imagen {
+        border-radius: 5px;
+    }
+
+    .act__titulo {
+        background-color: rgba(231, 231, 231, 0.404);
+    }
+}
+
+//-------------MQ------------//
+
+//Dispositivo movil pequeño
+@media (max-width: 575px) {
+    .seccionAct__contenedor {
+        padding: 5vh;
+    }
+}
+
+//Dispositivo movil
+@media (min-width: 576px) and (max-width: 767px) {
+    .seccionAct__contenedor {
+        padding: 10vh;
+    }
+}
+
+//Tablet
+@media (min-width: 768px) and (max-width: 991px) {
+    .seccionAct__contenedor {
+        padding: 13vh;
+    }
+}
+
+//PC de escritorio
+@media (min-width: 992px) {
+    .seccionAct__contenedor {
+        padding: 17.3vh;
+    }
+}

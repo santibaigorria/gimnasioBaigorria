@@ -1,0 +1,26 @@
+body{
+    font-family: 'Palanquin', sans-serif;
+}
+
+h1,
+.navegacion__titulo {
+    font-family: 'Passion One', cursive;
+    font-size: 2rem;
+}
+
+.seccionInicio{
+    &__boton{
+        font-family: 'Passion One', cursive;
+        font-size: 1.5rem;
+    }
+
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+.navegacion__link{
+    font-family: 'Heebo', sans-serif;
+}

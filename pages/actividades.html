@@ -1,126 +1,188 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <link rel="icon" href="../assets/img/favicon.jpeg">
-    <title>Actividades</title>
+    <style type="text/css"></style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@500&family=Palanquin:wght@200&family=Passion+One&display=swap"
+        rel="stylesheet">
+    <meta name="description" content="Ejercicios y Actividades para que te diviertas y entrenes.">
+    <title>Actividades | Mejora tu estado en poco tiempo!</title>
 </head>
+
 <body>
-
-<!-- Header -->
-<header class="header">
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <a href="../index.html"><img src="/assets/img/logo-gym-sinfondo.png" alt="" class="navegacion__foto"></a>
-            <a class="navbar-brand text-white" href="../index.html">PAMPA Gym</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="../index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="../pages/actividades.html">Actividades</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="../pages/productos.html">Productos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="../pages/about-us.html">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="../pages/contacto.html">Contacto</a>
-                    </li>
-                </ul>
-          </div>
-        </div>
-      </nav>
-</header>
-
-<!-- Main -->
-<main>
-    <section class="actividad__seccion">
-        <h2 class="actividad__titulo">¿Que actividades realizamos?</h2>
-        <div class="actividad__1">
-            <h3 class="actividad__nombre--drch">Brazilian Jiu Jitsu</h3>
-                <p class="actividad__descripcion--drch">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptatem iste doloremque illo recusandae, ducimus cupiditate? Odit minima reiciendis vero velit accusantium iste dolor ratione, recusandae sint beatae. Nam, atque!
-                </p>
-        </div>
-        <div class="actividad__contenedor--1">
-            <img src="../assets/img/act-1.jpg" alt="Foto Jiu Jitsu" class="actividad__foto">
-        </div>
-
-        <div class="actividad__2">
-            <h3 class="actividad__nombre--izq">Boxeo</h3>
-                <p class="actividad__descripcion--izq">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptatem iste doloremque illo recusandae, ducimus cupiditate? Odit minima reiciendis vero velit accusantium iste dolor ratione, recusandae sint beatae. Nam, atque!
-                </p>
-        </div>
-        <div class="actividad__contenedor--2">
-            <img src="../assets/img/act-2.jpg" alt="Foto Boxeo" class="actividad__foto">
+    <!-- Header -->
+    <header class="seccionAct">
+        <div class="container">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg navegacion">
+                    <div class="container-fluid">
+                        <div><a href="../index.html"><img src="/assets/img/logo-gym-sinfondo.png" alt="Pampa Gym"
+                                    class="navegacion__foto"></a></div>
+                        <a class="navbar-brand text-white navegacion__titulo" href="../index.html">PAMPA Gym</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="offcanvas offcanvas-end" tabindex="w-100" id="offcanvasNavbar"
+                            aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                                <p class="offcanvas-title navegacion__titulo" id="offcanvasNavbarLabel">PAMPA Gym</p>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white hvr-grow navegacion__link" aria-current="page"
+                                            href="../index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white hvr-grow navegacion__link"
+                                            href="../pages/actividades.html">Actividades</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white hvr-grow navegacion__link"
+                                            href="../pages/productos.html">Productos</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white hvr-grow navegacion__link"
+                                            href="../pages/about-us.html">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white hvr-grow navegacion__link"
+                                            href="../pages/contacto.html">Contacto</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
         </div>
 
-        <div class="actividad__3">
-            <h3 class="actividad__nombre--drch">Crossfit</h3>
-                <p  class="actividad__descripcion--drch">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptatem iste doloremque illo recusandae, ducimus cupiditate? Odit minima reiciendis vero velit accusantium iste dolor ratione, recusandae sint beatae. Nam, atque!
-                </p>
+        <div class="d-flex justify-content-center align-items-center">
+            <div class="content text-center seccionAct__contenedor">
+                <h1 class="d-flex justify-content-center  seccionAct__titulo">¿Queres saber que hacemos?</h1>
+                <p class="rounded p-2 seccionAct__descripcion">Te brindamos espacios para que hagas lo que mas te
+                    guste!
+                    Tenemos actividades como: Yoga y Pilates a cargo de nuestro profe <a
+                        href="../pages/about-us.html#profeLean" class="seccionAct__profe">Leandro Guzmán</a>,
+                    también
+                    actividades como: Powerlifting, a cargo de nuestro profe mas fuerte <a
+                        href="../pages/about-us.html#profeChino" class="seccionAct__profe">Thiago 'Chino' Rossi</a>
+                    y también contamos con espacios de defensa personal como: Brazilian JiuJitsu y Boxeo, ambas a cargo
+                    del profe <a href="../pages/about-us.html#profeJuan" class="seccionAct__profe">Juan
+                        Baigorria</a>, por último tenemos el área de Crossfit en manos de nuestro profe <a
+                        href="../pages/about-us.html#profeRober" class="seccionAct__profe" class="href">Roberto
+                        Rosane</a>. La inscripción la podes realizar
+                    acercandote al
+                    mostrador o hablando con el profe que este acargo de la actividad que quieras comenzar.</p>
+            </div>
         </div>
-        <div class="actividad__contenedor--3">
-            <img src="../assets/img/act-3.jpg" alt="Foto Crossfit" class="actividad__foto"> 
-        </div>
+    </header>
 
-        <div class="actividad__4">
-            <h3 class="actividad__nombre--izq">Powerlifting</h3>
-                <p class="actividad__descripcion--izq">
-                    Lorem ipsum dolor sit amet consectetur adipisicing  elit. Explicabo voluptatem iste doloremque illo recusandae, ducimus cupiditate? Odit minima reiciendis vero velit accusantium iste dolor ratione, recusandae sint beatae. Nam, atque!
-                </p>
+    <!-- Main -->
+    <main>
+        <h2 class="d-flex justify-content-center pt-2 seccionAct__subtitulo" id="seccionActividades">Actividades</h2>
+        <div class="container">
+            <section class="row g4 pb-3">
+                <div class="col-xs-12 col-sm-12 pt-5 col-md-6 col-lg-6 col-xl-4 col-xxl-4">
+                    <div class="card act__contenedor">
+                        <div class="card-body">
+                            <h3 class="d-flex justify-content-center act__titulo">Brazilian JiuJitsu</h3>
+                            <p class="card-text">El jiu-jitsu brasileño es un arte marcial, deporte de combate y
+                                sistema de defensa personal desarrollado en Brasil. Se centra principalmente en la
+                                lucha cuerpo a cuerpo en el suelo, usando para ello luxaciones, estrangulaciones,
+                                inmovilizaciones y derribos.</p>
+                        </div>
+                        <img src="/assets/img/act-1-min.jpg" class="card-img-bottom w-100 act__imagen"
+                            alt="Personas practicando JiuJitsu">
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 pt-5 col-md-6 col-lg-6 col-xl-4 col-xxl-4">
+                    <div class="card act__contenedor">
+                        <div class="card-body">
+                            <h3 class="d-flex justify-content-center act__titulo">Boxeo</h3>
+                            <p class="card-text">El boxeo es un deporte de contacto y autodefensa en el que dos
+                                contrincantes luchan utilizando únicamente sus puños con guantes, golpeando a su
+                                adversario de la cintura hacia arriba, dentro de un cuadrilátero.</p>
+                        </div>
+                        <img src="/assets/img/act-2-min.jpg" class="card-img-bottom w-100 act__imagen"
+                            alt="Personas Boxeando">
+                    </div>
+                </div>
+                <div class="col-xs6 col-sm-12 pt-5 col-md-6 col-lg-6 col-xl-4 col-xxl-4">
+                    <div class="card act__contenedor">
+                        <div class="card-body justify-content-center">
+                            <h3 class="d-flex justify-content-center act__titulo">Crossfit</h3>
+                            <p class="card-text">CrossFit es un tipo de entrenamiento de ejercicios funcionales,
+                                constantemente variados, ejecutados a alta intensidad.</p>
+                        </div>
+                        <img src="/assets/img/act-3-min.jpg" class="card-img-bottom w-100 act__imagen"
+                            alt="Grupo de personas haciendo Crossfit">
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 pt-5 col-md-6 col-lg-6 col-xl-4 col-xxl-4">
+                    <div class="card act__contenedor">
+                        <div class="card-body">
+                            <h3 class="d-flex justify-content-center act__titulo">Powerlifting</h3>
+                            <p class="card-text">El powerlifting es un deporte de fuerza que consiste en la realización
+                                de tres ejercicios de levantamiento de peso: la sentadilla, el press de banca y el peso
+                                muerto.</p>
+                        </div>
+                        <img src="/assets/img/act-4-min.jpg" class="card-img-bottom w-100 act__imagen"
+                            alt="Persona haciendo Powerlifting">
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 pt-5 col-md-6 col-lg-6 col-xl-4 col-xxl-4">
+                    <div class="card act__contenedor">
+                        <div class="card-body">
+                            <h3 class="d-flex justify-content-center act__titulo">Pilates</h3>
+                            <p class="card-text">El pilates es un método de ejercicio y movimiento físico. Su objetivo
+                                es fortalecer y equilibrar cuerpo y mente.</p>
+                        </div>
+                        <img src="/assets/img/act-5-min.jpg" class="card-img-bottom w-100 act__imagen"
+                            alt="Mujeres haciendo Pilates">
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 pt-5 col-md-6 col-lg-6 col-xl-4 col-xxl-4">
+                    <div class="card act__contenedor">
+                        <div class="card-body">
+                            <h3 class="d-flex justify-content-center act__titulo">Yoga</h3>
+                            <p class="card-text">Yoga es una ciencia intemporal, un conjunto de técnicas que conducen al
+                                individuo al bienestar, trabajando a un tiempo cuerpo, mente y espíritu como un todo.
+                            </p>
+                        </div>
+                        <img src="/assets/img/act-6-min.jpg" class="card-img-bottom w-100 act__imagen"
+                            alt="Grupo de personas haciendo Yoga">
+                    </div>
+                </div>
+            </section>
         </div>
-        <div class="actividad__contenedor--4">
-            <img src="../assets/img/act-4.jpg" alt="Foto PowerL" class="actividad__foto"> 
-        </div>
+    </main>
 
-        <div class="actividad__5">
-            <h3 class="actividad__nombre--drch">Pilates</h3>
-                <p class="actividad__descripcion--drch">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptatem iste doloremque illo recusandae, ducimus cupiditate? Odit minima reiciendis vero velit accusantium iste dolor ratione, recusandae sint beatae. Nam, atque!
-                </p>
+    <footer>
+        <a href="../index.html"><img src="/assets/img/logo-gym-sinfondo.png" alt="Logo Gym" class="contacto__foto"></a>
+        <div class="contacto">
+            <a href="https://www.instagram.com/pampa_gym/" target="_blank" class="contacto__red--ig"></a>
+            <a href="https://www.facebook.com/" target="_blank" class="contacto__red--face"></a>
+            <a href="https://www.whatsapp.com/" target="_blank" class="contacto__red--wsp"></a>
+            <a href="https://outlook.live.com/mail/0/" target="_blank" class="contacto__red--mail"></a>
         </div>
-        <div class="actividad__contenedor--5">
-            <img src="../assets/img/act-5.jpg" alt="Foto Pilates" class="actividad__foto"> 
-        </div>
+        <span class="contacto__copy">&copy;2022, PAMPA Gym, Derechos reservados.</span>
+    </footer>
 
-        <div class="actividad__6">
-            <h3 class="actividad__nombre--izq">Yoga</h3>
-                <p class="actividad__descripcion--izq">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptatem iste doloremque illo recusandae, ducimus cupiditate? Odit minima reiciendis vero velit accusantium iste dolor ratione, recusandae sint beatae. Nam, atque!
-                </p>
-        </div>
-        <div class="actividad__contenedor--6">
-            <img src="../assets/img/act-6.jpg" alt="Foto Yoga" class="actividad__foto">
-        </div>
-    </section>
-</main>
-
-<!-- Footer -->
-<footer>
-    <img src="../assets/img/logo-gym-sinfondo.png" alt="Logo Gym" class="contacto__foto">
-    <div class="contacto">
-        <a href="" class="contacto__red--ig"></a>
-        <a href="" class="contacto__red--face"></a>
-        <a href="" class="contacto__red--wsp"></a>
-        <a href="" class="contacto__red--mail"></a>
-    </div>
-    <span class="contacto__copy">&copy;2022, PAMPA Gym, Derechos reservados.</span>
-</footer>
-    <script src="/js/bootstrap.js"></script>
+    <!-- Scripts -->
+    <script src="./js/bootstrap.min.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,46 @@
+.seccionProduc {
+    background-image: url(/assets/img/inicioProduc.jpg);
+    @include portadas;
+
+    &__contenedor {
+        padding: 20vh;
+    }
+
+    &__titulo {
+        color: map-get($colores, "letras");
+    }
+
+    &__descripcion {
+        color: map-get($colores, "letras");
+    }
+}
+
+//-------------MQ------------//
+
+//Dispositivo movil pequeño
+@media (max-width: 575px) {
+    .seccionProduc__contenedor {
+        padding: 5vh;
+    }
+}
+
+//Dispositivo movil
+@media (min-width: 576px) and (max-width: 767px) {
+    .seccionProduc__contenedor {
+        padding: 10vh;
+    }
+}
+
+//Tablet
+@media (min-width: 768px) and (max-width: 991px) {
+    .seccionProduc__contenedor {
+        padding: 15vh;
+    }
+}
+
+//PC de escritorio
+@media (min-width: 992px) {
+    .seccionProduc__contenedor {
+        padding: 20vh;
+    }
+}

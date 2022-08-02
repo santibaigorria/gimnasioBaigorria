@@ -1,150 +1,189 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="icon" href="./assets/img/favicon.jpeg">
-    <style type="text/css"></style>
-    <title>Pampa Gym</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="icon" href="./assets/img/favicon.jpeg">
+  <style type="text/css"></style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Heebo:wght@500&family=Palanquin:wght@200&family=Passion+One&display=swap"
+    rel="stylesheet">
+  <meta name="description" content="El mejor lugar en Córdoba para mejorar tú salud.">
+  <title>Pampa Gym | Gimnasio de Córdoba</title>
 </head>
+
 <body>
-
-<!-- Header -->
-<header class="header">
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <a href="./index.html"><img src="/assets/img/logo-gym-sinfondo.png" alt="" class="navegacion__foto"></a>
-            <a class="navbar-brand text-white" href="./index.html">PAMPA Gym</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+  <header class="seccionInicio vh-100">
+    <div class="container">
+      <div class="row">
+        <nav class="navbar navbar-expand-lg navegacion">
+          <div class="container-fluid">
+            <div><a href="./index.html"><img src="/assets/img/logo-gym-sinfondo.png" alt="Pampa Gym"
+                  class="navegacion__foto"></a></div>
+            <a class="navbar-brand text-white navegacion__titulo" href="./index.html">PAMPA Gym</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar">
+              <span class="navbar-toggler-icon"></span>
             </button>
-
-          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="./index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="./pages/actividades.html">Actividades</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="./pages/productos.html">Productos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="./pages/about-us.html">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="./pages/contacto.html">Contacto</a>
-                    </li>
+            <div class="offcanvas offcanvas-end" tabindex="w-100" id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <p class="offcanvas-title navegacion__titulo" id="offcanvasNavbarLabel">PAMPA Gym</p>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link text-white hvr-grow navegacion__link" aria-current="page"
+                      href="./index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white hvr-grow navegacion__link"
+                      href="./pages/actividades.html">Actividades</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white hvr-grow navegacion__link" href="./pages/productos.html">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white hvr-grow navegacion__link" href="./pages/about-us.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white hvr-grow navegacion__link" href="./pages/contacto.html">Contacto</a>
+                  </li>
                 </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+
+    <div class="h-75 d-flex justify-content-center align-items-center">
+      <div class="content text-center seccionInicio__contenedor">
+      <div><img src="/assets/img/logo-gym-sinfondo.png" alt="Logo del Gym" class="w-50"></div>
+        <h1 class="text-white seccionInicio__titulo">TÚ EVOLUCIÓN COMIENZA AQUÍ</h1>
+        <a href="./index.html#nuestroGym" class="btn btn-lg hvr-grow seccionInicio__boton">Saber más!</a>
+      </div>
+    </div>
+  </header>
+
+  <!---- Cuerpo de la pagina ---->
+  <main>
+    <div class="container">
+      <!-- Seccion Carrusel -->
+      <section class="row">
+        <div class="col-12">
+          <h2 class="pt-2 d-flex justify-content-start" id="nuestroGym">Un poco de nuestro Gym</h2>
+        </div>
+
+        <div class="col-12 py-5 d-flex justify-content-center">
+          <!-- Carrusel -->
+          <div class="w-75 shadow-lg">
+            <div id="carouselExampleIndicators" class="carousel slide w-100" data-bs-ride="true">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                  aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                  aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                  aria-label="Slide 6"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./assets/img-gym/foto-gym1.jpeg" class="d-block w-100 rounded" alt="Foto del gimnasio">
+                </div>
+                <div class="carousel-item">
+                  <img src="./assets/img-gym/foto-gym2.jpeg" class="d-block w-100 rounded" alt="Foto del gimnasio">
+                </div>
+                <div class="carousel-item">
+                  <img src="./assets/img-gym/foto-gym3.jpeg" class="d-block w-100 rounded" alt="Foto del gimnasio">
+                </div>
+                <div class="carousel-item">
+                  <img src="./assets/img-gym/foto-gym4.jpeg" class="d-block w-100 rounded" alt="Foto del gimnasio">
+                </div>
+                <div class="carousel-item">
+                  <img src="./assets/img-gym/foto-gym5.jpeg" class="d-block w-100 rounded" alt="Foto del gimnasio">
+                </div>
+                <div class="carousel-item">
+                  <img src="./assets/img-gym/foto-gym6.jpeg" class="d-block w-100 rounded" alt="Foto del gimnasio">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
           </div>
         </div>
-      </nav>
+      </section>
 
-      <section class="seccionInicio">
-        <div class="seccionInicio__contenedor">
-        <div class="seccionInicio__imagen"><img src="./assets/img/logo-gym-sinfondo.png" alt="Logo del Gym" class="seccionInicio__logo"></div>  
-        <h2 class="seccionInicio__titulo">Tú evolución comienza aquí</h2>
-        <div class="seccionInicio__contenedor--boton"><a class="grow seccionInicio__boton" href="../index.html#seccionGym">Saber más</a></div>
-        </div>
-    </section>
-</header>
+      <hr>
 
-<!-- Main -->
-<main>
-    <section class="grid">
-    <!-- Seccion Gimnasio -->
-        <div class="seccionGym" id="seccionGym">
-            <h2 class="seccionGym__titulo">Actividades</h2>
-        </div>
-        <!-- Carrusel -->
-        <div id="carouselExampleIndicators" class="seccionGym__carrusel carousel slide" data-bs-ride="true">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="/assets/img-gym/foto-gym1.jpg" class="seccionGym__carrusel--foto d-block" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="/assets/img-gym/foto-gym2.jpg" class="seccionGym__carrusel--foto d-block" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="/assets/img-gym/foto-gym3.jpg" class="seccionGym__carrusel--foto d-block" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="/assets/img-gym/foto-gym4.jpg" class="seccionGym__carrusel--foto d-block" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="/assets/img-gym/foto-gym5.jpg" class="seccionGym__carrusel--foto d-block" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="/assets/img-gym/foto-gym6.jpg" class="seccionGym__carrusel--foto d-block" alt="...">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+      <!-- Seccion de Nosotros + Ubicacion -->
+      <section class="row py-5">
+        <div class="col-xs-12 col-sm-6 col-md-12 col-lg-12 col-xl-5 col-xxl-5 py-4">
+          <h3>Te contamos un poco de nosotros...</h3>
+          <p>Somos un equipo dispuesto a ayudarte a vos. Para eso, contamos con <a href="/pages/about-us.html"
+              class="text-decoration-none">profesores</a> capacitados para que tus
+            entrenamientos,
+            como nuestras distintas <a href="/pages/actividades.html#seccionActividades" class="text-decoration-none">
+              actividades</a>,
+            sean
+            mejores.</p>
+          <p>También, tenemos los mejores <a href="/pages/productos.html" class="text-decoration-none">productos</a>
+            para
+            ofrecerte. Desde barritas proteicas hasta los mejores shakers para tu proteina.</p>
         </div>
 
-          <!-- Texto debajo del Carrusel -->
-        <div class="seccionGym__descripcion">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, vel rem sit praesentium beatae, sunt, molestiae aliquam inventore suscipit tempore accusamus aspernatur quibusdam. Vel a deleniti laudantium neque iure sequi, eaque illum deserunt sapiente veritatis reprehenderit magni fuga magnam iste ut eius illo aut molestiae accusantium. Laboriosam assumenda beatae quos accusantium ad provident amet quae porro saepe illum minus voluptas iusto, quas voluptates, earum corporis exercitationem necessitatibus consequuntur eligendi dolor..</p>
-        </div>
-        
-        <!-- Seccion Nosotros -->
-
-        <!-- Un resumen de nosotros -->
-        <div class="seccionNosotros__contenedor--1">
-            <h4 class="seccionNosotros__titulo--1">Un resumen de nosotros...</h4>
-        </div>
-        <div class="seccionNosotros__descripcion">
-            <p class="seccionNosotros__parrafo">
-                Donde nos encontramos: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate suscipit dicta provident autem ut id repellendus sequi nulla, eos ipsam, quisquam modi fugiat quaerat praesentium sed mollitia quod distinctio facere magni laudantium consequuntur aut harum placeat? Explicabo laboriosam commodi quidem perspiciatis nulla consequuntur cumque nihil illum iusto! Nobis delectus, est animi expedita omnis nisi reiciendis magnam maxime quia, eos alias.
-            </p>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-4 col-xxl-4 py-4">
+          <h3>¿Donde nos podes encontrar?</h3>
+          <p>Nos encontramos situados en <span class="text-decoration-underline">Granadero Diaz 3075</span>. En el
+            segundo
+            piso de la construccion. ¡Te vamos a estar esperando!</p>
         </div>
 
+        <div class="col-xs-12 col-sm-12 d-flex justify-content-center col-md-6 col-lg-6 col-xl-3 col-xxl-3 py-4">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13625.320161320225!2d-64.202426!3d-31.377462000000005!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943298fc3f449085%3A0xcbfad0b16599c0d1!2sGranadero%20D%C3%ADaz%203075%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1657098936120!5m2!1ses-419!2sar"
+            class="rounded shadow-lg w-100 hvr-float" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </section>
+    </div>
+  </main>
 
-        <!-- Donde nos encontramos? -->
-        <div class="seccionNosotros__contenedor--2">
-            <h4 class="seccionNosotros__titulo--2">¿Donde nos encontramos?</h4>
-        </div>
-        <div class="seccionNosotros__descripcion--dos">
-            <p class="seccionNosotros__parrafo--2">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quae itaque error doloribus architecto. Magnam, ea facilis voluptatem deserunt.
-            </p>
-        </div>
-        <div class="seccionNosotros__ubicacion--mapa">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3406.3300555067694!2d-64.20461448499363!3d-31.377461581417105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943298fc3f449085%3A0xcbfad0b16599c0d1!2sGranadero%20D%C3%ADaz%203075%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1655707070843!5m2!1ses-419!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="seccionNosotros__mapa"></iframe>
-        </div>
-    </section>
-</main>
-
-<!-- Footer -->
-<footer>
-    <img src="./assets/img/logo-gym-sinfondo.png" alt="Logo Gym" class="contacto__foto">
-    <!-- Redes en proceso -->
+  <!---- Footer de la pagina ---->
+  <footer>
+    <a href="./index.html"><img src="/assets/img/logo-gym-sinfondo.png" alt="Logo Gym" class="contacto__foto"></a>
     <div class="contacto">
-        <a href="" class="contacto__red--ig"></a>
-        <a href="" class="contacto__red--face"></a>
-        <a href="" class="contacto__red--wsp"></a>
-        <a href="" class="contacto__red--mail"></a>
+      <a href="https://www.instagram.com/pampa_gym/" target="_blank" class="contacto__red--ig"></a>
+      <a href="https://www.facebook.com/" target="_blank" class="contacto__red--face"></a>
+      <a href="https://www.whatsapp.com/" target="_blank" class="contacto__red--wsp"></a>
+      <a href="https://outlook.live.com/mail/0/" target="_blank" class="contacto__red--mail"></a>
     </div>
     <span class="contacto__copy">&copy;2022, PAMPA Gym, Derechos reservados.</span>
-</footer>
-    <script src="./js/bootstrap.js"></script>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="./js/bootstrap.min.js"></script>
 </body>
+
 </html>
